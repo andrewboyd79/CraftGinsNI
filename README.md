@@ -73,6 +73,8 @@ The target audience of this website is:
 -   Craft gin drinkers in Northern Ireland 
 -   Craft gin drinkers from outside Northern Ireland
 -   Tourists to Northern Ireland
+-   Gin Producers
+-   Bars/restaurants supplying local gin
     
 Users will be expecting information presentation to be:
 - Accurate – information needs to be not only factually correct but up to date
@@ -90,11 +92,11 @@ Users will be comfortable with the following types of content:
 Users of this website expect to be able to:
 - Find out who produces craft gin in Northern Ireland and get some background information on each producer
 - Find out what types of gin each producer has available 
-- Find out where producers are located and how they might get there from their current location
+- Find out where producers are located and which are close to each other
 - Find out how/where they can purchase the gins (from shops)
 - Find out where they can sample/taste/drink craft gins in Northern Ireland
-- Find out where the bars/restaurants are located and how they might get there from their current location
-- Subscribe to the website mailing list
+- Find out where the bars/restaurants are located
+- How they can recommend other gin producers/bars/restaurants to be featured on the website
 
 ## User Stories
 The following user stories have been developed to outline some of the benefits the website has to its users:
@@ -175,7 +177,10 @@ The website will initially be developed as a Minimal Viable Product (MVP) and de
 ## Initial release features
 Based on importance/feasability analysis the following features will be available in the initial release:
 
-- TO BE COMPLETED
+- An interactive map (Google Maps) which allows user to display the location of gin producers and bars/restaurants
+- At a glance and detailed information of each gin producer and bar/restaurant which can be filtered to restrict the geographic region being searched
+- Contact form to allow users to recommend other producers/establishments
+- The site should have clear navigation section/elements to guide the user and should directly link to producers or bars/restaurant websites
 
 ## Global Features
 The following features will persist across all website pages to provide a consitent look and feel:
@@ -191,7 +196,9 @@ The following features will persist across all website pages to provide a consit
 ## Home Page Features
  - The Home Page will feature a large hero image stretching the full width of the screen on all devices. An element of interactivity is present with the subheading fading in when the user hovers over the hero image.
 
- - TO BE COMPLETED
+ - The Home Page will also feature a review section which will short extracts from reviews of the featured gins or bars/restaurants.  On desktop sized diplays the reviews will be presented side by side. On mobile sized displays the reviews will be displayed singly.
+
+- Towards the bottom of the Home Page the contact form will be located.
 
 ## Producer Page Features
 - TO BE COMPLETED
@@ -267,4 +274,5 @@ The following images have been used for this project:
 ## Acknowledgements
 - Thanks to my mentor (Aaron Sinnott) for his guidance and help during this project
 - Thanks to the Code Instutute Slack community who helped with various articles, suggestions and problem solves
-- Code Instutute tutor support for their help resolving minor issue with GitPod
+- Code Instutute tutor support for their help resolving minor issue with 
+
