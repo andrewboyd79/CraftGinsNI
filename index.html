@@ -8,22 +8,50 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    
-<div id="map" class="container">Map</div>
+ 
+<div id="heroouter">
+</div>
+<div id ="herotext" class="container">
+        <h1><strong>Craft Gin</strong></h1>
+        <h1>Unlike any other</h1>
+        <h4>Discover the gin</h4>
+        <h4>Northern Ireland has to offer</h4>
+    </div>
 
-    <div class="buttons container">
+<div class="buttons container">
+        <hr>
         <div class="row">
-             <button id="getdata" class="selectorbutton">Get Data</button>
+            <div class="col-8">                
+                <h2 class="buttonsheading">From across Northern Ireland</h2>
+            </div>
+            <div class="col-4">
+               <button id="getdata" class="selectorbutton">Show on Map</button> 
+            </div>
+            
+                       
+        </div>
+        <hr> 
+        <div class="row">
             <button id="antdownbutton" class="selectorbutton">Show Antrim & Down</button>
             <button id="tyrfermbutton" class="selectorbutton">Show Tyrone & Fermanagh</button>
             <button id="armderbutton" class="selectorbutton">Show Armagh & Derry</button>
             <button id="showallbutton" class="selectorbutton">Show All</button>
-        </div>
+            <button id="produceronlybutton" class="selectorbutton">Producers Only</button>
+        </div> 
+        <hr> 
+        
         
     </div>
+<!--
+<div id="mapwrapper">
+    <div id="map" class="container"></div>
+</div>
+   -->
 
-    <div class="demoouter container">
-        <div id="demo" class="demo row"></div>
+    
+
+    <div class="producerdataouter container">
+        <div id="producerdatawrapper" class="datawrapper row"></div>
     </div>
 
     <div id="contactusform">
@@ -33,6 +61,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/697e0c65d6.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/producers.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5Wb_BzHBE3i4pjXUpXH_f7BWGVFJB9cs&callback=initMap"></script>
+    <script src="assets/js/maps.js"></script>
 </body>
 </html>
