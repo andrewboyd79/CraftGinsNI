@@ -21,9 +21,14 @@
 <div class="buttons container">
         <hr>
         <div class="row">
-            <div class="col-8">                
+            <div class="col-1">
+                <i class="fa fa-map-signs fa-5x"></i>
+            </div>
+            <div class="col-7">
                 <h2 class="buttonsheading">From across Northern Ireland</h2>
             </div>
+                
+            
             <div class="col-4">
                <button id="getdata" class="selectorbutton">Show on Map</button> 
             </div>
@@ -35,10 +40,34 @@
             <button id="antdownbutton" class="selectorbutton">Show Antrim & Down</button>
             <button id="tyrfermbutton" class="selectorbutton">Show Tyrone & Fermanagh</button>
             <button id="armderbutton" class="selectorbutton">Show Armagh & Derry</button>
-            <button id="showallbutton" class="selectorbutton">Show All</button>
+            
             <button id="produceronlybutton" class="selectorbutton">Producers Only</button>
+            <button id="ginjointsonlybutton" class="selectorbutton">Gin Joints Only</button>
+            
+            <div class="dropdown col-4">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Select Region
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Antrim / Down</a></li>
+                  <li><a class="dropdown-item" href="#">Tyrone / Fermanagh</a></li>
+                  <li><a class="dropdown-item" href="#">Armagh / Derry</a></li>
+                </ul>
+              </div>
+              <div class="dropdown col-4">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Type
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Producers</a></li>
+                  <li><a class="dropdown-item" href="#">Gin Joints</a></li>
+                </ul>
+              </div>
+            <div class="col-4">
+                <button id="showallbutton" class="selectorbutton">Show All</button>
+            </div>
+        </div>
         </div> 
-        <hr> 
         
         
     </div>
