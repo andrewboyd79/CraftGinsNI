@@ -60,7 +60,7 @@
 
 .buttonsheading{
     text-transform: uppercase;
-    color: #8c8c8c;
+    color: #0D0D0D;
     font-family: 'brandon-grotesque', sans-serif;
     font-weight: 800;
     font-style: normal;
@@ -69,19 +69,47 @@
     }
 
 .buttons button{
-    width: 20%;
+    width: 15%;
     margin: 0 auto;
     font-size: 14px;
     margin-top: 20px;
     margin-bottom: 15px;
     }
 
+  .col-4 button{
+        width: 75%;
+        margin: 0 auto;
+        font-size: 14px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        }
+
 .buttons #getdata{
    width: 75%;   
     }
 
 .selectorbutton {
-    width: 10px;
+    width: 8px;
+    text-transform: uppercase;
+    background-color: #61788C;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.dropdown button {
+    text-transform: uppercase;
+    background-color: #61788C;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    display: inline;
+    width: 75%;
+}
+
+.dropdown li a{
     text-transform: uppercase;
     background-color: #61788C;
     color: #FFFFFF;
@@ -131,7 +159,16 @@
     font-size: 14px;
     color: #364C59;    
 }
-
+.countyheading{
+    text-transform: uppercase;
+    font-family: 'brandon-grotesque',sans-serif;
+    color: #61788C;
+    font-weight: 800;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: right;
+    
+}
 .producerimage{
     width: 100%;
     height: 400px;
