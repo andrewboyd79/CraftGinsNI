@@ -1,10 +1,11 @@
+    {"Producers":
     [{"title":"Jawbox Spirits Co Ltd",
     "overview":"Jawbox is a classic dry gin made in a traditional distillery set in a wooded estate just outside the city of Belfast.",
     "image":"assets/images/Jawbox-Gin_4_3.jpg",
     "address":"155-157 Donegall Pass, Belfast, Co Antrim, BT7 1DT",
     "county":"Antrim",
     "description":"lorem ipsum",
-    "location":"lat: 1111, lng: -1111",
+    "location":"54.59126940338371,-5.925571636701271",
     "detailed":"In homes across Belfast deep boxy Belfast sinks began to appear. In many homes it was the focal point of the kitche - the place where many conversations were held.  And so it got its nickname - 'The Jawbox' <br> Greatness through graft and craft is the spirit which inspired the creation of Jawbox. <br> A gin brand for the adventurous, the confident, the curious - created for those who enjoy every moment",
     "types":"Class London Dry",
     "category":"Producer"
@@ -15,7 +16,7 @@
     "address":"43 Manor Street, Donaghadee, Co Down, BT21 0HG",
     "county":"Down",
     "description":"lorem ipsum",
-    "location":"lat: 1111, lng: -1111",
+    "location":"54.642529, -5.532204",
     "detailed":"This section contains detailed information on the history/background of the gin producer",
     "types":"Gin Type Test 1",
     "category":"Producer"
@@ -26,7 +27,7 @@
     "address":"346 Lough Shore Road, Enniskillen,Co Fermanagh, BT93 7DX",
     "county":"Fermanagh",
     "description":"lorem ipsum",
-    "location":"lat: 1111, lng: -1111",
+    "location":"54.448132, -7.794293",
     "detailed":"This section contains detailed information on the history/background of the gin producer",
     "types":"Gin Type Test 1",
     "category":"Producer"
@@ -37,7 +38,7 @@
     "address":"237 Trewmount Road, Dungannon, Co Tyrone, BT71 7ED",
     "county":"Tyrone",
     "description":"lorem ipsum",
-    "location":"lat: 1111, lng: -1111",
+    "location":"54.448132, -7.794293",
     "detailed":"This section contains detailed information on the history/background of the gin producer",
     "types":"Gin Type Test 1",
     "category":"Producer"
@@ -48,7 +49,7 @@
     "address":"62 Gransha Road, Newtownards, Co Down, BT22 1AJ",
     "county":"Down",
     "description":"lorem ipsum",
-    "location":"lat: 1111, lng: -1111",
+    "location":"54.468224, -5.510564",
     "detailed":"This section contains detailed information on the history/background of the gin producer",
     "types":"Gin Type Test 1",
     "category":"Producer"
@@ -60,7 +61,7 @@
     "address":"Titanic Quarter, Belfast, Co Antrim, BT3 9DT",
     "county":"Antrim",
     "description":"lorem ipsum",
-    "location":"lat: 1111, lng: -1111",
+    "location":"54.601686, -5.905813",
     "detailed":"This section contains detailed information on the history/background of the gin producer",
     "types":"Gin Type Test 1",
     "category":"Producer"
@@ -71,7 +72,7 @@
     "address":"Rademon Estate Distillery, Downpatrick, Co Down",
     "county":"Down",
     "description":"lorem ipsum",
-    "location":"lat: 1111, lng: -1111",
+    "location":"54.395077, -5.788797",
     "detailed":"This section contains detailed information on the history/background of the gin producer",
     "types":"Gin Type Test 1",
     "category":"Producer"
@@ -82,7 +83,7 @@
     "address":"12-14 Church Lane, Belfast, Co Antrim, BT1 4QN",
     "county":"Antrim",
     "description":"lorem ipsum",
-    "location":"lat: 1111, lng: -1111",
+    "location":"54.599789, -5.925104",
     "detailed":"This section contains detailed information on the history/background of the gin producer",
     "types":"Gin Type Test 1",
     "category":"Gin Joint"
@@ -93,7 +94,7 @@
     "address":"Galgorm Resort & Spa, Galgorm, Co Antrim, BT42 1EA",
     "county":"Antrim",
     "description":"lorem ipsum",
-    "location":"lat: 1111, lng: -1111",
+    "location":"54.875546, -6.343377",
     "detailed":"This section contains detailed information on the history/background of the gin producer",
     "types":"Gin Type Test 1",
     "category":"Gin Joint"
@@ -104,7 +105,7 @@
     "address":"46 Great Victoria Street, Belfast, Co Antrim, BT2 7BA",
     "county":"Antrim",
     "description":"lorem ipsum",
-    "location":"lat: 1111, lng: -1111",
+    "location":"54.594692, -5.933982",
     "detailed":"This section contains detailed information on the history/background of the gin producer",
     "types":"Gin Type Test 1",
     "category":"Gin Joint"
@@ -115,9 +116,9 @@
     "address":"The Harbour, Portrush, Co Antrim, BT56 8DF",
     "county":"Antrim",
     "description":"lorem ipsum",
-    "location":"lat: 1111, lng: -1111",
+    "location":"55.207603, -6.658400",
     "detailed":"This section contains detailed information on the history/background of the gin producer",
     "types":"Gin Type Test 1",
     "category":"Gin Joint"
 }]
-    
+}
