@@ -3,16 +3,15 @@ fetch('producers.json') //fetches the producers.json file
     return response.json(); 
 })
 .then(function(data){
-    //console.log(data);
     appendData(data);
-})
+    })
 ;
 
 //function to append the data from JSON file
 function appendData (data) {
-    console.log(data);
-    var mainContainer1=document.getElementsByClassName("datawrapper")[0]; //fetches the div with the ID demo1
-        for (var i=0; i< data.length; i++) { //loops through every object in the JSON
+        //console.log(data.Producers);
+        var mainContainer1=document.getElementsByClassName("datawrapper")[0]; //fetches the div with the ID demo1
+        for (var i=0; i< data.Producers.length; i++) { //loops through every object in the JSON
             
 
                 //declares the variables & creates each element
@@ -25,12 +24,11 @@ function appendData (data) {
                 var info = document.createElement("button"); 
                 var nearby = document.createElement("button");
 
-            if (data[i].category === "Producer")  { //if statement checks if condition is met
+            if (data.Producers[i].category === "Producer")  { //if statement checks if condition is met
                 //assigns id/classes to the elements
-                box.id=`${data[i].title}`;
-                box.className= `${data[i].county} producerbox col-6`;
+                box.id=`${data.Producers[i].title}`;
+                box.className= `${data.Producers[i].county} producerbox col-6`;
                 location.className="countyheading";
-                console.log("Location div created");
                 headingtext.className = "producerheading";
                 categorytext.className = "producerheading"; 
                 bodytext.className = "producerbody"; 
@@ -41,8 +39,8 @@ function appendData (data) {
 
             else { //else if condition is not met
                 //assigns id/classes to the elements
-                box.id=`${data[i].title}`;
-                box.className= `${data[i].county} barbox col-6`;
+                box.id=`${data.Producers[i].title}`;
+                box.className= `${data.Producers[i].county} barbox col-6`;
                 location.className="countyheading";
                 headingtext.className = "barheading";
                 categorytext.className = "barheading"; 
@@ -53,11 +51,11 @@ function appendData (data) {
                 }
 
                 //adds the informtion from the .json file to the relevant element
-                location.innerHTML=`${data[i].county}`;
-                image.src = `${data[i].image}`; 
-                headingtext.innerHTML = `${data[i].title}`;
-                categorytext.innerHTML=`${data[i].category}`             
-                bodytext.innerHTML = `${data[i].overview}`; 
+                location.innerHTML=`${data.Producers[i].county}`;
+                image.src = `${data.Producers[i].image}`; 
+                headingtext.innerHTML = `${data.Producers[i].title}`;
+                categorytext.innerHTML=`${data.Producers[i].category}`             
+                bodytext.innerHTML = `${data.Producers[i].overview}`; 
                 info.innerHTML = `More Information`;
                 nearby.innerHTML = `Nearby`;
 
@@ -103,4 +101,20 @@ $("#ginjointsonlybutton").click(function(){ // selects the button with producron
         $(".producerbox").hide(); // elements with the barbox class are hidden - therefore displaying producer only
     }
 })
+
+$(".dropdown-item").click(function(){
+    if($('a').eq(0)){
+        console.log("Antrim selected");
+        //$(".Tyrone,.Fermanagh, .Armagh, .Derry").hide();
+    };
+});
+
+/*$(".dropdown-item").click(function(){
+    if($('.dropdown-item:contains("Tyrone")')){
+        console.log("Tyrone selected");
+        $(".Down, .Antrim, .Armagh, .Derry").hide(); // div with classes Down, Antrim, Armagh, Derry are hidden
+    };
+*/
+ 
+
 
