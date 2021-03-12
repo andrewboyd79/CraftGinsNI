@@ -1,33 +1,133 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800&display=swap');
 @import url("https://use.typekit.net/che8gwv.css");
 
+/*--General Styling (all pages)--*/
+
+* {
+    padding: 0;
+    margin: 0;    
+}
+
 .container{
     width: 90vw;
 }
-/*--Hero Section Styling--*/
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #0D0D0D;
+}
+
+/*--Navbar Styling (all pages)--*/
+.nav{
+    background-color: #0D0D0D90;
+    height: 10vh;
+    position: relative;
+    font-family: 'brandon-grotesque', sans-serif;
+}
+
+ .navigation{
+     position: absolute;
+     margin-top: 50px;
+     width: 100%;
+     z-index: 5;
+ }
+ 
+ .navbar-brand img{
+     width: 250px;
+     margin-top: -30px;
+     margin-left: 15%;
+     position: absolute
+     ;
+ }
+
+ .navbar-list-items{
+     text-transform: uppercase;
+     font-size: 28px;
+     font-weight: 800;
+     text-decoration: none;
+     color: #FFFFFF;
+     position: absolute;
+     margin-top: 30px;
+     margin-left:35%;
+ }
+
+ .navbar-list-items i{
+     margin-right: 20px;
+ } 
+
+a:hover{
+    color: #61788C;
+}
+
+.active{
+    border-bottom: 1px solid #FFFFFF;
+}
+ 
+
+/*--Hero Section Styling (Homepage)--*/
+
+#homeheroouter{
+    height: 100vh;
+    background-image: url('../images/avenue-3464777_1920_169.jpg');
+    background-position: contain;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+}
+
+#homeherotext{
+    margin-top: -20%;
+    margin-left: 40%;
+    position: absolute;
+}
+
+#homeherotext h1{
+    text-transform: uppercase;
+    color:#FFFFFF;
+    font-family: 'brandon-grotesque', sans-serif;
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 1;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+#homeherotext h4{
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1.2;
+    font-size: 32px;
+    text-align: right;
+    }
+
+
+/*--Hero Section Styling (Places to go page)--*/
+
 
 #heroouter{
     height: 50vh;
-    background-image: url("../images/peter-mitchell-3M0bvgkBWv0-unsplash.jpg");
+    background-image: url('../images/peter-mitchell-3M0bvgkBWv0-unsplash.jpg');
     background-position: contain;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: blur(2px);
-    filter: brightness(-10%);
+    position: relative;
 }
 
 #herotext{
     margin-top: -10%;
     margin-left: 15%;
     position: absolute;
-    }
+}
 
 #herotext h1{
     text-transform: uppercase;
     color:#FFFFFF;
     font-family: 'brandon-grotesque', sans-serif;
     font-weight: 800;
-    font-size: 36px;
+    font-size: 72px;
     line-height: 0.8;
     margin-bottom: 20px;
 }  
@@ -39,23 +139,132 @@
     font-style: normal;
     line-height: 0.8;
     font-size: 20px;
+}
+
+/*--Categories Section (Homepage only)--*/
+
+#categoriesouter{
+    min-height: 50vh;
+}
+
+#categoriesicon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#categoriesicon i{
+        color: #8C8C8C; 
+        margin-bottom: 20px;
+        margin-top: 50px;    
+}
+
+#categoriesheading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#categoriesheading h1{
+    display: block;
+    text-transform: uppercase;
+    color: #8C8C8C;
+    font-family: 'brandon-grotesque', sans-serif;
+    font-weight: 800;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#categoriescontent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#categoriescontent img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-bottom: 50px;        
+}
+
+#categorieslabel{
+    display: block;
+    text-align: center;
+}
+
+#categorieslabel h2{
+    font-family: 'montserrat', sans-serif;
+    font-weight: 800;
+    color:#8C8C8C;
     }
 
-/*--Map Section Styling--*/
+#categorieslabel h4{
+    font-family: 'montserrat', sans-serif;
+    font-weight: 600;
+    color:#8C8C8C;
+}
+    
+/*--Reviews section (Homepage only)*/
+#reviewsouter{
+height:100vh;
+background-color: red;
+}
 
-#map{
-    width:80%;
-    height: 75vh;
-    }
+/*--Contact us form*/
+
+.contactformheading h2{
+    color: #8C8C8C;
+    text-transform: uppercase;
+    font-family: 'brandon-grotesque',sans-serif;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 20px;    
+}
+
+.contactformheading h4{
+    color: #8C8C8C;
+    font-family: 'montserrat',sans-serif;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20px;    
+}
+
+form label {
+    color:#364C59;
+    text-transform: uppercase;
+    font-family: 'montserrat',sans-serif;
+    font-weight: 800;
+    margin-top: 20px;
+}
+
+.form-text{
+    color:#364C59;
+    margin-top: 10px;
+}
+
+/*--Map Section Styling (Things to do page only)--*/
 
 #mapwrapper{
+    margin: 50px auto;
+    width: 90vw;
+    height: 75vh;
+    padding: 50px;
     background-color: #BFBFBF;
-    }
-/*--Selection Section Styling--*/
+}
+    
+#map{
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #0D0D0D;
+}
+
+    /*--Selection Section Styling (Things to do page only)--*/
 
 .buttons{
     margin-top: 30px;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
 }
 
 .buttonsheading{
@@ -66,7 +275,7 @@
     font-style: normal;
     margin-top: 20px;
     margin-bottom: 15px;
-    }
+}
 
 .buttons button{
     width: 15%;
@@ -74,19 +283,19 @@
     font-size: 14px;
     margin-top: 20px;
     margin-bottom: 15px;
-    }
+}
 
-  .col-4 button{
-        width: 75%;
-        margin: 0 auto;
-        font-size: 14px;
-        margin-top: 20px;
-        margin-bottom: 15px;
-        }
+.col-4 button{
+    width: 75%;
+    margin: 0 auto;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
 
 .buttons #getdata{
    width: 75%;   
-    }
+}
 
 .selectorbutton {
     width: 8px;
@@ -118,7 +327,7 @@
     font-style: normal;
 }
 
-/*--Content Section Styling--*/
+/*--Content Section Styling (Things to do page only)--*/
 
 #datawrapper{
    border: 1px solid black;
@@ -127,9 +336,11 @@
 .producerbox{
     margin-bottom: 50px;
 }
+
 .producerbox h2{
     padding-left: 10px;
 }
+
 .producerbox h2 h6{
     display: inline;
     float: right;    
@@ -159,6 +370,7 @@
     font-size: 14px;
     color: #364C59;    
 }
+
 .countyheading{
     text-transform: uppercase;
     font-family: 'brandon-grotesque',sans-serif;
@@ -166,9 +378,9 @@
     font-weight: 800;
     margin-top: 10px;
     margin-bottom: 10px;
-    float: right;
-    
+    float: right;    
 }
+
 .producerimage{
     width: 100%;
     height: 400px;
@@ -208,7 +420,7 @@
     min-height: 100px;
     background-color: #BFBFBF;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
     font-size: 16px;
 }
@@ -220,7 +432,7 @@
     min-height: 100px;
     background-color: #BFBFBF;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
     font-size: 16px;
 }
