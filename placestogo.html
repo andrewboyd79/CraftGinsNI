@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Craft Gins NI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!--Navigation Section-->
+<div id="heroouter">
+    <div class="navigation">
+    <div class ="nav">
+        <a href="index.html" class="navbar-brand">
+            <img src="assets/images/LogoCropped.png" alt="Craft Gins Ni Logo">
+        </a>
+        <a class="navbar-list-items a" href="placestogo.html"><i class="fas fa-glass-whiskey"></i>Places to go</a>   
+    </div>
+</div>
+</div>
+<div id ="herotext" class="container">
+        <h1><strong>Craft Gin</strong></h1>
+        <h1>Unlike any other</h1>
+        <h4>Discover the gin</h4>
+        <h4>Northern Ireland has to offer</h4>
+    </div>
+<!--Selection section-->
+<div class="buttons container">
+        <hr>
+    <div class="row">
+        <div class="col-1">
+            <i class="fa fa-map-signs fa-5x"></i>
+        </div>
+        <div class="col-7">
+            <h2 class="buttonsheading">From across Northern Ireland</h2>
+        </div>            
+    </div>
+<hr> 
+    <div class="row">
+        <button id="antdownbutton" class="selectorbutton">Show Antrim & Down</button>
+        <button id="tyrfermbutton" class="selectorbutton">Show Tyrone & Fermanagh</button>
+        <button id="armderbutton" class="selectorbutton">Show Armagh & Derry</button>
+                    
+        <button id="produceronlybutton" class="selectorbutton">Producers Only</button>
+        <button id="ginjointsonlybutton" class="selectorbutton">Gin Joints Only</button>           
+        <div class="dropdown col-4">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Select Region</button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a id="antdropdown" class="dropdown-item" href="#">Antrim / Down</a></li>
+                    <li><a class="dropdown-item" href="#">Tyrone / Fermanagh</a></li>
+                    <li><a class="dropdown-item" href="#">Armagh / Derry</a></li>
+                </ul>
+        </div>
+
+        <div class="dropdown col-4">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Type</button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Producers</a></li>
+                    <li><a class="dropdown-item" href="#">Gin Joints</a></li>
+                </ul>
+        </div>
+
+        <div class="col-4">
+            <button id="showallbutton" class="selectorbutton">Show All</button>
+        </div>
+    </div>
+<hr>
+</div>
+
+<!--Map section-->
+<div id="mapwrapper" class="container">
+    <div id="map" class="container"></div>
+</div>
+    
+<!--Content Section-->
+    <div class="producerdataouter container">
+        <div id="producerdatawrapper" class="datawrapper row"></div>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/697e0c65d6.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/producers.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5Wb_BzHBE3i4pjXUpXH_f7BWGVFJB9cs&callback=initMap"></script>
+    <script src="assets/js/maps.js"></script>
+</body>
+</html>
