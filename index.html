@@ -6,92 +6,93 @@
     <title>Craft Gins NI</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("user_h1NYz1BgTxc91bv4e8RSR");
+        })();</script> 
 </head>
 <body>
- 
-<div id="heroouter">
-</div>
-<div id ="herotext" class="container">
-        <h1><strong>Craft Gin</strong></h1>
-        <h1>Unlike any other</h1>
-        <h4>Discover the gin</h4>
-        <h4>Northern Ireland has to offer</h4>
-    </div>
+<!--Navigation Section-->
 
-<div class="buttons container">
-        <hr>
-        <div class="row">
-            <div class="col-1">
-                <i class="fa fa-map-signs fa-5x"></i>
-            </div>
-            <div class="col-7">
-                <h2 class="buttonsheading">From across Northern Ireland</h2>
-            </div>
-                
-            
-            <div class="col-4">
-               <button id="getdata" class="selectorbutton">Show on Map</button> 
-            </div>
-            
-                       
+<!--Hero Section-->
+<div id="homeheroouter">
+    <div class="navigation">
+        <div class ="nav">
+            <a href="index.html" class="navbar-brand">
+                <img src="assets/images/LogoCropped.png" alt="Craft Gins Ni Logo">
+            </a>
+            <a class="navbar-list-items" href="placestogo.html"><i class="fas fa-glass-whiskey"></i>Places to go</a>       
         </div>
-        <hr> 
-        <div class="row">
-            <button id="antdownbutton" class="selectorbutton">Show Antrim & Down</button>
-            <button id="tyrfermbutton" class="selectorbutton">Show Tyrone & Fermanagh</button>
-            <button id="armderbutton" class="selectorbutton">Show Armagh & Derry</button>
-            
-            <button id="produceronlybutton" class="selectorbutton">Producers Only</button>
-            <button id="ginjointsonlybutton" class="selectorbutton">Gin Joints Only</button>
-            
-            <div class="dropdown col-4">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                  Select Region
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item" href="#">Antrim / Down</a></li>
-                  <li><a class="dropdown-item" href="#">Tyrone / Fermanagh</a></li>
-                  <li><a class="dropdown-item" href="#">Armagh / Derry</a></li>
-                </ul>
-              </div>
-              <div class="dropdown col-4">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                  Type
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item" href="#">Producers</a></li>
-                  <li><a class="dropdown-item" href="#">Gin Joints</a></li>
-                </ul>
-              </div>
-            <div class="col-4">
-                <button id="showallbutton" class="selectorbutton">Show All</button>
-            </div>
-        </div>
-        </div> 
-        
-        
     </div>
-<!--
-<div id="mapwrapper">
-    <div id="map" class="container"></div>
 </div>
-   -->
+<div id ="homeherotext">
+        <h1>Explore the Craft Gins</h1>
+        <h1>of Northern Ireland</h1>
+        <h4>Embark on an epic journey of discovery</h4>
+        <h4>of some of the finest locally produced craft gin</h4>
+        <h4>and where to sample it</h4>
+    </div>
+<!--Categories section-->
+<div id="categorieswrapper">
+    <div id="categoriesouter">
+        <div id="categoriesicon">
+            <i class="far fa-compass fa-5x"></i>
+        </div>
+        <div id="categoriesheading" class="container">
+            <h1>Your NI gin adventure awaits</h1>            
+        </div>
+        <div id="categoriescontent" class="container">
+            <a href="placestogo.html">
+            <img src="assets/images/lucy-arbuthnot-RLR6yVWOoDk-unsplash.jpg" alt="">
+            </a>    
+        </div>
+        <div id="categorieslabel">
+            <h2>Click the image above</h2>
+            
+            <h4>
+                to view the gin producers & gin joints of Northern Ireland
+            </h4>
+        </div>
+    </div>
+</div>
 
+<!--Review section-->
+<div id="reviewsouter">
     
-
-    <div class="producerdataouter container">
-        <div id="producerdatawrapper" class="datawrapper row"></div>
-    </div>
-
-    <div id="contactusform">
-        <p>Contact Us Form</p>        
+</div>
+<!--Contact Us form section-->
+    <div class="contactformouter container">
+        <div class="row">
+            <div class="contactformheading col-12">
+                <h2 class ="col-12">Contact Us Form</h2>
+                <h4>Let us know of other gins we should feature!</h4>
+            </div>
+        </div>
+        <form onsubmit="return sendMail(this); "class="col-12">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label col-6">Name</label>
+              <input type="text" class="form-control" id="fromName" aria-describedby="nameHelp">
+              <div id="nameHelp" class="form-text">Please let us know what you like to be called!</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="text" class="form-control" id="fromEmail" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">Please let us know where we can contact you!</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Message</label>
+                <input type="text" class="form-control" id="msg" aria-describedby="contentHelp">
+                <div id="contentHelp" class="form-text">Please let us about other gin producers and bars that we should feature on our site!</div>
+              </div>
+            <button type="submit" class="btn btn-primary infobutton">Submit</button>
+          </form>        
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/697e0c65d6.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="assets/js/producers.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5Wb_BzHBE3i4pjXUpXH_f7BWGVFJB9cs&callback=initMap"></script>
-    <script src="assets/js/maps.js"></script>
+    <script src="assets/js/sendMail.js"></script>
+    
 </body>
 </html>
