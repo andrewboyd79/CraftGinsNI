@@ -24,8 +24,7 @@ var infowindow = new google.maps.InfoWindow; //creates new information window
 
 var marker, i; 
 
-for (i = 0; i < locations.length; i++) {  //iterates through theb locations starting at 0 until i is no longer less than the length
-   console.log(locations[i][0]);       
+for (i = 0; i < locations.length; i++) {  //iterates through theb locations starting at 0 until i is no longer less than the length   
      marker = new google.maps.Marker({ //creates new marker
        position: new google.maps.LatLng(locations[i][1], locations[i][2]), //defines marker position using 2nd and 3rd pieces of info from locations array
        map: map //defines which map the markers are to be displayed on
