@@ -1,15 +1,13 @@
 fetch('producers.json') //fetches the producers.json file
 .then(function(response){
-    return response.json(); 
+    return response.json(); //turns data into json format
 })
 .then(function(data){
-    appendData(data);
+    appendData(data); //callsback the appendData function
     })
 ;
 
-//function to append the data from JSON file
-function appendData (data) {
-        //console.log(data.Producers);
+function appendData (data) { //function to append the data from JSON file
         var mainContainer1=document.getElementsByClassName("datawrapper")[0]; //fetches the div with the ID demo1
         for (var i=0; i< data.Producers.length; i++) { //loops through every object in the JSON
             
@@ -18,10 +16,25 @@ function appendData (data) {
                 var box = document.createElement("div");
                 var location = document.createElement("div"); 
                 var image = document.createElement("img"); 
-                var headingtext = document.createElement("h2");
-                var categorytext = document.createElement("h6"); 
-                var bodytext = document.createElement("div"); 
+                var headingText = document.createElement("h2");
+                var categoryText = document.createElement("h6"); 
+                var bodyText = document.createElement("div"); 
                 var info = document.createElement("button"); 
+                var modal = document.createElement("div");
+                var modalDialog = document.createElement("div");
+                var modalContent = document.createElement("div");
+                var modalHeader = document.createElement("div");
+                var modalTitle = document.createElement("h1");
+                var modalBody = document.createElement("div");
+                var modalRow = document.createElement("div");
+                var modalContentTitle = document.createElement("h5");
+                var modalContentText = document.createElement("p");
+                var modalContentTitle1 = document.createElement("h5");
+                var modalContentTitle2 = document.createElement("h5");
+                var modalContentTitle3 = document.createElement("h5");
+                var modalFooter = document.createElement("div");
+                var webProducerButton = document.createElement("button");
+                var modalCloseButton = document.createElement("button");
                 var nearby = document.createElement("button");
 
             if (data.Producers[i].category === "Producer")  { //if statement checks if condition is met
@@ -29,12 +42,36 @@ function appendData (data) {
                 box.id=`${data.Producers[i].title}`;
                 box.className= `${data.Producers[i].county} producerbox col-6`;
                 location.className="countyheading";
-                headingtext.className = "producerheading";
-                categorytext.className = "producerheading"; 
-                bodytext.className = "producerbody"; 
+                headingText.className = "producerheading";
+                categoryText.className = "producerheading"; 
+                bodyText.className = "producerbody"; 
                 image.className = "producerimage"; 
-                info.className = "infobutton";  
+                info.setAttribute ("type","button");
+                info.className = "infobutton selectorbutton";                
+                info.setAttribute ("data-bs-toggle","modal");
+                info.setAttribute ("data-bs-target",`#Modal${data.Producers[i].id}`); 
                 nearby.className="nearbybutton";
+                modal.className="modal fade";
+                modal.id=`Modal${data.Producers[i].id}`;
+                modal.setAttribute ("tabindex","-1");
+                modal.setAttribute ("aria-labelledby",`Modal${data.Producers[i].id}Label`); //start from here
+                modal.setAttribute ("aria-hidden","true");
+                modalDialog.className="modal-dialog modal-dialog-centered modal-xl";
+                modalContent.className="modal-content";
+                modalHeader.className="modal-header";
+                modalTitle.className="modal-title";
+                modalTitle.id=`Modal${data.Producers[i].id}Label`;
+                modalBody.className="modal-body";
+                modalRow.className="row";
+                modalContentTitle.className="col-12 modal-content-title";
+                modalContentText.className="col-12 modal-content-text";
+                modalContentTitle1.className="col-4 modal-content-title";
+                modalContentTitle2.className="col-4 modal-content-title";
+                modalContentTitle3.className="col-4 modal-content-title";
+                modalFooter.className="modal-footer";
+                webProducerButton.className="btn btn-secondary producerweb";
+                modalCloseButton.className="btn btn-secondary close";
+                modalCloseButton.setAttribute ("data-bs-dismiss","modal");
                 }
 
             else { //else if condition is not met
@@ -42,27 +79,67 @@ function appendData (data) {
                 box.id=`${data.Producers[i].title}`;
                 box.className= `${data.Producers[i].county} barbox col-6`;
                 location.className="countyheading";
-                headingtext.className = "barheading";
-                categorytext.className = "barheading"; 
-                bodytext.className = "barbody"; 
-                image.className = "barimage"; 
-                info.className = "infobutton";  
+                headingText.className = "barheading";
+                categoryText.className = "barheading"; 
+                bodyText.className = "barbody"; 
+                image.className = "barimage";
+                info.setAttribute ("type","button"); 
+                info.className = "infobutton";
+                info.setAttribute ("data-bs-toggle","modal");
+                info.setAttribute ("data-bs-target",`#Modal${data.Producers[i].id}`);
                 nearby.className="nearbybutton";
+                modal.className="modal fade";
+                modal.id=`Modal${data.Producers[i].id}`;
+                modal.setAttribute ("tabindex","-1");  
+                modal.setAttribute ("aria-labelledby",`Modal${data.Producers[i].id}Label`); //start from here
+                modal.setAttribute ("aria-hidden","true");                
+                modalDialog.className="modal-dialog modal-dialog-centered modal-xl";
+                modalContent.className="modal-content";
+                modalHeader.className="modal-header";
+                modalTitle.className="modal-title";
+                modalTitle.id=`Modal${data.Producers[i].id}Label`;
+                modalBody.className="modal-body";
+                modalRow.className="row";
+                modalContentTitle.className="col-12 modal-content-title";
+                modalContentText.className="col-12 modal-content-text";
+                modalContentTitle1.className="col-4 modal-content-title";
+                modalContentTitle2.className="col-4 modal-content-title";
+                modalContentTitle3.className="col-4 modal-content-title";
+                modalFooter.className="modal-footer";
+                webProducerButton.className="btn btn-secondary producerweb";
+                modalCloseButton.className="btn btn-secondary close";
+                modalCloseButton.setAttribute ("data-bs-dismiss","modal");
                 }
 
                 //adds the informtion from the .json file to the relevant element
                 location.innerHTML=`${data.Producers[i].county}`;
                 image.src = `${data.Producers[i].image}`; 
-                headingtext.innerHTML = `${data.Producers[i].title}`;
-                categorytext.innerHTML=`${data.Producers[i].category}`             
-                bodytext.innerHTML = `${data.Producers[i].overview}`; 
+                headingText.innerHTML = `${data.Producers[i].title}`;
+                categoryText.innerHTML=`${data.Producers[i].category}`             
+                bodyText.innerHTML = `${data.Producers[i].overview}`; 
                 info.innerHTML = `More Information`;
                 nearby.innerHTML = `Nearby`;
+                modalTitle.innerHTML=`${data.Producers[i].title}`;
+                modalContentTitle.innerHTML=`${data.Producers[i].address}`;
+                modalContentText.innerHTML=`${data.Producers[i].detailed}`;
+                modalContentTitle1.innerHTML=`${data.Producers[i].types}`;
+                webProducerButton.innerHTML=`Producers Website`;
+                modalCloseButton.innerHTML = `Close`;
+
+
+
 
                 // appends the individual child divs to the parent and then the elements the box div
                 mainContainer1.append(box); 
-                box.append(location,image, headingtext, bodytext, info, nearby);
-                headingtext.append(categorytext);
+                box.append(location,image, headingText, bodyText, info, nearby, modal);
+                headingText.append(categoryText);
+                modal.append(modalDialog)
+                modalDialog.append(modalContent);
+                modalContent.append(modalHeader, modalBody, modalFooter);
+                modalHeader.append(modalTitle);
+                modalBody.append(modalRow);
+                modalRow.append(modalContentTitle,modalContentText,modalContentTitle1,modalContentTitle2,modalContentTitle3);
+                modalFooter.append(webProducerButton, modalCloseButton);
                 }
         }
 
@@ -104,7 +181,7 @@ $("#ginjointsonlybutton").click(function(){ // selects the button with producron
 
 $(".dropdown-item").click(function(){
     if($('a').eq(0)){
-        console.log("Antrim selected");
+        //console.log("Antrim selected");
         //$(".Tyrone,.Fermanagh, .Armagh, .Derry").hide();
     };
 });
