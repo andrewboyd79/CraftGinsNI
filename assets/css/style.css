@@ -378,7 +378,7 @@ form label {
     font-weight: 800;
     margin-top: 10px;
     margin-bottom: 10px;
-    float: right;    
+    text-align: right;    
 }
 
 .producerimage{
@@ -454,6 +454,71 @@ form label {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-style: normal;
+    float: right;
+}
+
+.modal-content{
+    background-color:#FFFFFF;
+    min-height: 25vh;
+}
+
+.modal-title{
+    text-transform: uppercase;
+    font-family: 'brandon-grotesque', sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    width: 80%;
+    margin: 0 auto;
+    color: #8C8C8C;
+}
+
+.modal-body{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.modal-content-title{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #364C59;
+}
+
+.modal-content-text{
+   text-align: justify;
+   width: 50%;
+   color: #364C59;
+}
+
+.modal-content-info{
+    width: 50%;
+    text-align: right;
+    text-transform: uppercase;
+    font-family: 'brandon-grotesque', sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    color: #8C8C8C; 
+}
+
+.modal-content-info li{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    list-style:none;
+    text-align: right;
+    font-size: 18px;
+}
+
+.modal-footer{
+    margin: 0 auto;
+}
+
+.modal-footer button{
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    background-color: #364C59;
 }
 
 
