@@ -206,24 +206,95 @@ a:hover{
 }
     
 /*--Reviews section (Homepage only)*/
-#reviewsouter{
-height:100vh;
-background-color: red;
+
+#reviewswrapper{
+    margin-top: 50px;
+    height: 100vh;    
 }
 
-/*--Contact us form*/
+#reviewsimagery{
+    height: 50vh;
+    background-image: url('../images/k-mitch-hodge-CTB2vC1PlTM-unsplash_16_9.jpg');
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size:contain;
+    position: relative; 
+    background-color: #8C8C8C;   
+}
 
-.contactformheading h2{
+#reviewsimagery h1{
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 55%;
+    width: 25%;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-family: 'brandon-grotesque',sans-serif;
+    font-weight: 800;
+    font-size: 72px;
+}
+#reviewsimagery i{
+    margin-right: 50px;
+}
+
+#reviewsouter{
+    margin-top: 20px;
+    height:50vh;
+}
+
+.review-content{
+    height: 40vh;
+}
+
+.review-content-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.review-content-heading{
+    margin-top: 25px;
+    text-align: center;
     color: #8C8C8C;
     text-transform: uppercase;
     font-family: 'brandon-grotesque',sans-serif;
     font-weight: 800;
+}
+
+.review-content-text{
+    color:#364C59;
+    font-family: 'montserrat',sans-serif;
+    text-align: justify;
+    margin-top: 25px;
+    min-height: 100px;
+}
+.review-content-reviewer{
+    color:#364C59;
+    font-family: 'montserrat',sans-serif;
+    text-align: justify;
+    font-weight: 600;
+    text-align: right;
+    margin-top: 25px;
+}
+
+/*--Contact us form*/
+.contactformwrapper{
+    background-color:#61788C;
+    height: 75vh;
+}
+
+.contactformheading h2{
+    color: #BFBFBF;
+    text-transform: uppercase;
+    font-family: 'brandon-grotesque',sans-serif;
+    font-weight: 800;
     text-align: center;
-    margin-top: 20px;    
+    margin-top: 50px;    
 }
 
 .contactformheading h4{
-    color: #8C8C8C;
+    color: #BFBFBF;
     font-family: 'montserrat',sans-serif;
     font-weight: 600;
     text-align: center;
@@ -239,9 +310,10 @@ form label {
 }
 
 .form-text{
-    color:#364C59;
+    color:#FFFFFF;
     margin-top: 10px;
 }
+
 
 /*--Map Section Styling (Things to do page only)--*/
 
@@ -521,4 +593,7 @@ form label {
     background-color: #364C59;
 }
 
+.reviewcontent{
+    width: 33%
+}
 
