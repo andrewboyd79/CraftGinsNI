@@ -53,50 +53,37 @@
         mainContainer1.append(box);
     };
 
-$("#antdownbutton").click(function(){ // selects the button with tyrfermbutton ID and runs the following function when button is clicked
-    if($(".Antrim, .Down")){ // if class is Tyrone or Fermanagh
-        $(".Tyrone, .Fermanagh, .Armagh, .Derry").hide(); // div with classes Down, Antrim, Armagh, Derry are hidden
-        }  
-})
-    
-$("#tyrfermbutton").click(function(){ // selects the button with tyrfermbutton ID and runs the following function when button is clicked
-    if($(".Tyrone, .Fermanagh")){ // if class is Tyrone or Fermanagh
-        $(".Down, .Antrim, .Armagh, .Derry").hide(); // div with classes Down, Antrim, Armagh, Derry are hidden
-    }  
-})
-
-$("#armderbutton").click(function(){ // selects the button with armderbutton ID and runs the following function when button is clicked
-    if($(".Armagh, .Derry")){ // if class is Armagh or Derry
-        $(".Antrim,.Down, .Tyrone, .Fermanagh").hide(); // div with classes Antrim, Down, Tyrone, Fermanagh are hidden
-    }  
-})
 
 $("#showallbutton").click(function(){ // selects the button with showallbutton ID and runs the following function when button is clicked
-    if($("div:contains('box')")){ // if div contains word box then
         $(".barbox, .producerbox").show(); // elements with producerbox and barbox class are shown
-    }      
-})
+    })
 
-$("#produceronlybutton").click(function(){ // selects the button with producronlybutton ID and runs the following function when button is clicked
-    if($("h2:not('producerbox')")){ // if h2 isn't producerbox
-        $(".barbox").hide(); // elements with the barbox class are hidden - therefore displaying producer only
-    }
-})
 
-$("#ginjointsonlybutton").click(function(){ // selects the button with producronlybutton ID and runs the following function when button is clicked
-    if($("h2:not('barbox')")){ // if h2 isn't producerbox
-        $(".producerbox").hide(); // elements with the barbox class are hidden - therefore displaying producer only
-    }
-})
+    $("#antrimdropdown").click(function(){
+        $(".barbox, .producerbox").show();
+        $(".Tyrone, .Fermanagh, .Armagh, .Derry").hide();
+        });
 
-/*
-$(".dropdown-item").click(function(){
-    if($('a').eq(0)){
-        //console.log("Antrim selected");
-        //$(".Tyrone,.Fermanagh, .Armagh, .Derry").hide();
-    };
-});
-*/
+    $("#tyronedropdown").click(function(){
+        $(".barbox, .producerbox").show();
+        $(".Down, .Antrim, .Armagh, .Derry").hide();
+        });
+
+    $("#derrydropdown").click(function(){
+        $(".barbox, .producerbox").show();
+        $(".Antrim,.Down, .Tyrone, .Fermanagh").hide();
+        }); 
+
+    $("#ginproduceronlybutton").click(function(){
+        $(".barbox").hide();
+        });  
+    
+    $("#ginjointsonlybutton").click(function(){
+        $(".producerbox").hide();
+        });  
+    
+
+
 
 
 
