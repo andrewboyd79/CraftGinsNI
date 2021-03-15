@@ -332,6 +332,20 @@ form label {
     border: 1px solid #0D0D0D;
 }
 
+/*--Footer Dection (All pages)--*/
+
+#footerwrapper{
+    height: 25vh;
+    background-color: orange;
+}
+
+#footerouter{
+    background-color: green;
+    height: 100%;
+}
+
+
+
     /*--Selection Section Styling (Things to do page only)--*/
 
 .buttons{
