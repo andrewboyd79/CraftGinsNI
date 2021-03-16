@@ -39,31 +39,27 @@
     </div>
 <hr> 
     <div class="row">
-        <button id="antdownbutton" class="selectorbutton">Show Antrim & Down</button>
-        <button id="tyrfermbutton" class="selectorbutton">Show Tyrone & Fermanagh</button>
-        <button id="armderbutton" class="selectorbutton">Show Armagh & Derry</button>
-                    
-        <button id="produceronlybutton" class="selectorbutton">Producers Only</button>
-        <button id="ginjointsonlybutton" class="selectorbutton">Gin Joints Only</button>           
-        <div class="dropdown col-4">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Select Region</button>
+        <div class="dropdown col-3">
+            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Select Region</button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><a id="antdropdown" class="dropdown-item" href="#">Antrim / Down</a></li>
-                    <li><a class="dropdown-item" href="#">Tyrone / Fermanagh</a></li>
-                    <li><a class="dropdown-item" href="#">Armagh / Derry</a></li>
+                    <li><a id="antrimdropdown" class="dropdown-item" href="#">Antrim</a></li>
+                    <li><a id="downdropdown" class="dropdown-item" href="#">Down</a></li>
+                    <li><a id="tyronedropdown" class="dropdown-item" href="#">Tyrone</a></li>
+                    <li><a id="fermanaghdropdown" class="dropdown-item" href="#">Fermanagh</a></li>
+                    <li><a id="derrydropdown" class="dropdown-item" href="#">Derry</a></li>
+                </ul>
+        </div>
+
+        <div class="dropdown col-3">
+            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">Type</button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a id="ginproduceronlybutton" class="dropdown-item" href="#">Gin Producers</a></li>
+                    <li><a id="ginjointsonlybutton" class="dropdown-item" href="#">Gin Joints</a></li>
                 </ul>
         </div>
 
         <div class="dropdown col-4">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Type</button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><a class="dropdown-item" href="#">Producers</a></li>
-                    <li><a class="dropdown-item" href="#">Gin Joints</a></li>
-                </ul>
-        </div>
-
-        <div class="col-4">
-            <button id="showallbutton" class="selectorbutton">Show All</button>
+            <button onclick="initMap ()" id="showallbutton" class="btn ">Show All</button>
         </div>
     </div>
 <hr>
@@ -83,8 +79,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/697e0c65d6.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/producersinfo.js"></script>
     <script src="assets/js/producers.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5Wb_BzHBE3i4pjXUpXH_f7BWGVFJB9cs&callback=initMap"></script>
     <script src="assets/js/maps.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5Wb_BzHBE3i4pjXUpXH_f7BWGVFJB9cs&callback=initMap"></script>
+    
 </body>
 </html>
