@@ -158,7 +158,7 @@ The combination has been checked on Adobe Colour; no potential conflicts have be
 -  The sans serif font Montserrat has been chosen for the body text as it compliments Brandon Grotesque; it also has excellent legibility having been optimised for both web and mobile interfaces.  It is available on Google fonts and if it fails will be replaced with a sans serif font within the browser.
 
 ### Icons
-The following Font Awesome icons from medical and science categories will be used throughout this website:
+The following Font Awesome icons from will be used throughout this website:
 - [Compass](https://fontawesome.com/icons/compass?style=regular)
 - [Directions]( https://fontawesome.com/icons/directions?style=solidbrands)
 - [Wine-bottle]( https://fontawesome.com/icons/wine-bottle?style=solid)
