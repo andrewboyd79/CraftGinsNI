@@ -19,7 +19,7 @@
             <div class="${producerInfoContent.description}body">${producerInfoContent.overview}</div>
 
             <button type="button" class="infobutton" data-bs-toggle="modal" data-bs-target="#Modal${producerInfoContent.id}">More Information</button>
-            <button class="nearbybutton">Nearby</button>
+            
 
             <div class="modal fade" id="Modal${producerInfoContent.id}" tabindex="-1" arialabelledby="Modal${producerInfoContent.id}Label" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-xl">
