@@ -17,8 +17,8 @@
 
 <!--Hero Section-->
 <div id="homeheroouter">
-    <div class="navigation">
-        <div class ="nav">
+    <div id="navigation">
+        <div id ="nav">
             <a href="index.html" class="navbar-brand">
                 <img src="assets/images/LogoCropped.png" alt="Craft Gins Ni Logo">
             </a>
@@ -27,11 +27,11 @@
     </div>
 </div>
 <div id ="homeherotext">
-        <h1>Explore the Craft Gins</h1>
-        <h1>of Northern Ireland</h1>
-        <h4>Embark on an epic journey of discovery</h4>
-        <h4>of some of the finest locally produced craft gin</h4>
-        <h4>and where to sample it</h4>
+        <h1>Explore the Craft Gins<br>
+            of Northern Ireland</h1>
+        <h4>Embark on an epic journey of discovery<br>
+            of some of the finest locally produced craft gin<br>
+            and where to sample it</h4>
     </div>
 
 <!--Categories section-->
@@ -41,36 +41,34 @@
             <i class="far fa-compass fa-5x"></i>
         </div>
         <div id="categoriesheading" class="container">
-            <h1>Your NI gin adventure awaits</h1>            
+            <h2>Your NI gin adventure awaits</h2>            
+        </div>
+        <div id="categorieslabel">
+            <h3>Select a category below to view <br>
+            the gins Northern Ireland has to offer</h3>
         </div>
         <div id="categoriescontent" class="container">
             <a href="placestogo.html">
             <img src="assets/images/lucy-arbuthnot-RLR6yVWOoDk-unsplash.jpg" alt="snowy bleak road">
             </a>    
-        </div>
-        <div id="categorieslabel">
-            <h2>Click the image above</h2>
-            
-            <h4>
-                to view the gin producers & gin joints of Northern Ireland
-            </h4>
-        </div>
+        </div>       
     </div>
 </div>
 
 <!--Review section-->
 <div id="reviewswrapper">
     <div id="reviewsimagery">
-        <h1><i class="far fa-heart fa-xl"></i>Gins loved by Prince and pauper alike</h1>
-        </div>
+        <h2><i class="far fa-heart fa-x"></i>Gins loved by Prince and pauper alike</h2>
+        <h3>Northern Ireland has a growing reputation<br>
+            for producing award winning gin as diverse<br>
+            as country which produces it</h3>    
+    </div>
     <div id="reviewsouter" class="container">
         <div class="row">
             <div class="review-content col-4">
                 <img class="review-content-image" src="assets\images\Jawbox-Gin_4_3.jpg" alt="Jawbox gin bottle">
                 <h2 class="review-content-heading">Review</h2>
-                <p class="review-content-text">"Honestly, Jawbox is one of the best dry gins that I’ve reviewed in some time and will definitely be one of my new go-to gins from now on!"                                   
-                </p>
-                <p class="review-content-reviewer">Review by: theginkin.com</p>
+                <p class="review-content-text">"Honestly, Jawbox is one of the best dry gins that I’ve reviewed in some time and will definitely be one of my new go-to gins from now on!"</p>                                      <p class="review-content-reviewer">Review by: theginkin.com</p>
             </div>
             <div class="review-content col-4">
                 <img class="review-content-image" src="assets\images\original_shortcross-gin_4_3.jpg" alt="Shortcross gin bottle">
@@ -89,28 +87,28 @@
 </div>
 
 <!--Contact Us form section-->
-<div class="contactformwrapper">    
-<div class="contactformouter container">
+<div id="contactformwrapper">    
+    <div id="contactformouter" class="container">
         <div class="row">
-            <div class="contactformheading col-12">
+            <div id="contactformheading" class="col-12">
                 <h2 class ="col-12">Contact Us Form</h2>
                 <h4>Let us know of other gins we should feature!</h4>
             </div>
         </div>
-        <form onsubmit="return sendMail(this); "class="col-12">
+        <form onsubmit="return sendMail(this);" id="contactform" class="col-12">
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label col-6">Name</label>
-              <input type="text" class="form-control" id="fromName" aria-describedby="nameHelp">
+              <input type="text" class="form-control" id="fromName" aria-describedby="nameHelp" required>
               <div id="nameHelp" class="form-text">Please let us know what you like to be called!</div>
             </div>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input type="text" class="form-control" id="fromEmail" aria-describedby="emailHelp">
+                <input type="text" class="form-control" id="fromEmail" aria-describedby="emailHelp" required>
                 <div id="emailHelp" class="form-text">Please let us know where we can contact you!</div>
               </div>
               <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Message</label>
-                <input type="text" class="form-control" id="msg" aria-describedby="contentHelp">
+                <input type="text" class="form-control" id="msg" aria-describedby="contentHelp" required>
                 <div id="contentHelp" class="form-text">Please let us about other gin producers and bars that we should feature on our site!</div>
               </div>
             <button type="submit" class="btn btn-primary infobutton">Submit</button>
@@ -122,9 +120,23 @@
 <div id="footerwrapper">
     <div id="footerouter" class="container">
         <div class="row">
-            <div class="col-4">Test</div>
-            <div class="col-4">Test</div>
-            <div class="col-4">Test</div>
+            <div id="footerimagery" class="col-4">
+                <img src="assets\images\LogoCropped.png" alt="Craft Gin Northern Ireland Logo">
+            </div>
+            <div id="footertext" class="col-4">
+                <p>The Craft Gin Northern Ireland website has been created to showcase the best gin producers and bars/restaurants serving
+                    gin across Northern Ireland.<br>
+                    Join us on a journey of discovery and sample craft gin like no other!
+                </p>
+            </div>
+            <div id="footeritems" class="col-4">
+                <ul>
+                    <li><a  href="placestogo.html"><i class="fas fa-glass-whiskey"></i>Home</a></li>
+                    <li><a  href="placestogo.html"><i class="fas fa-glass-whiskey"></i>Places to go</a></li>
+                </ul>
+                
+                
+            </div>
         </div>
     </div>
 </div>
