@@ -19,37 +19,36 @@ body{
 }
 
 /*--Navbar Styling (all pages)--*/
-.nav{
+
+#navigation{
+    position: absolute;
+    margin-top: 25px;
+    width: 100%;
+}
+
+#nav{
     background-color: #0D0D0D90;
     height: 10vh;
     position: relative;
     font-family: 'brandon-grotesque', sans-serif;
 }
 
- .navigation{
-     position: absolute;
-     margin-top: 50px;
-     width: 100%;
-     z-index: 5;
- }
- 
  .navbar-brand img{
-     width: 250px;
+     width: 300px;
      margin-top: -30px;
-     margin-left: 15%;
-     position: absolute
-     ;
+     margin-left: 5%;
+     position: absolute;
  }
 
  .navbar-list-items{
      text-transform: uppercase;
-     font-size: 28px;
-     font-weight: 800;
+     font-size: 24px;
+     font-weight: 600;
      text-decoration: none;
      color: #FFFFFF;
      position: absolute;
-     margin-top: 30px;
-     margin-left:35%;
+     margin-top: 35px;
+     margin-left:25%;
  }
 
  .navbar-list-items i{
@@ -78,7 +77,7 @@ a:hover{
 
 #homeherotext{
     margin-top: -20%;
-    margin-left: 40%;
+    margin-left: 60%;
     position: absolute;
 }
 
@@ -87,7 +86,7 @@ a:hover{
     color:#FFFFFF;
     font-family: 'brandon-grotesque', sans-serif;
     font-weight: 800;
-    font-size: 72px;
+    font-size: 48px;
     line-height: 1;
     margin-bottom: 20px;
     text-align: right;
@@ -96,16 +95,14 @@ a:hover{
 #homeherotext h4{
     color: #FFFFFF;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-style: normal;
+    font-weight: 500;
     line-height: 1.2;
-    font-size: 32px;
+    font-size: 28px;
     text-align: right;
     }
 
 
 /*--Hero Section Styling (Places to go page)--*/
-
 
 #heroouter{
     height: 50vh;
@@ -165,13 +162,13 @@ a:hover{
     justify-content: center;
 }
 
-#categoriesheading h1{
+#categoriesheading h2{
     display: block;
     text-transform: uppercase;
     color: #8C8C8C;
     font-family: 'brandon-grotesque', sans-serif;
     font-weight: 800;
-    font-size: 48px;
+    font-size: 40px;
     margin-bottom: 20px;
 }
 
@@ -193,16 +190,12 @@ a:hover{
     text-align: center;
 }
 
-#categorieslabel h2{
+#categorieslabel h3{
     font-family: 'montserrat', sans-serif;
-    font-weight: 800;
+    font-weight: 500;
+    font-size: 28px;
     color:#8C8C8C;
-    }
-
-#categorieslabel h4{
-    font-family: 'montserrat', sans-serif;
-    font-weight: 600;
-    color:#8C8C8C;
+    margin-bottom: 50px;
 }
     
 /*--Reviews section (Homepage only)*/
@@ -222,35 +215,45 @@ a:hover{
     background-color: #8C8C8C;   
 }
 
-#reviewsimagery h1{
+#reviewsimagery h2{
     position: absolute;
-    margin-top: 5%;
+    margin-top: 7.5%;
     margin-left: 55%;
     width: 25%;
     color: #FFFFFF;
     text-transform: uppercase;
     font-family: 'brandon-grotesque',sans-serif;
     font-weight: 800;
-    font-size: 72px;
+    font-size: 40px;
 }
 #reviewsimagery i{
-    margin-right: 50px;
+    margin-right: 25px;
 }
 
+#reviewsimagery h3{
+    position: absolute;
+    margin-top: 12.5%;
+    margin-left: 55%;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    color:#364C59;
+    
+}
 #reviewsouter{
-    margin-top: 20px;
-    height:50vh;
+    margin-top: 25px;
+    height:75vh;
 }
 
 .review-content{
-    height: 40vh;
+    height: 50vh;
 }
 
 .review-content-image {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 .review-content-heading{
@@ -260,11 +263,13 @@ a:hover{
     text-transform: uppercase;
     font-family: 'brandon-grotesque',sans-serif;
     font-weight: 800;
+    font-size: 24px;
 }
 
 .review-content-text{
     color:#364C59;
     font-family: 'montserrat',sans-serif;
+    font-weight: 500;
     text-align: justify;
     margin-top: 25px;
     min-height: 100px;
@@ -274,44 +279,57 @@ a:hover{
     font-family: 'montserrat',sans-serif;
     text-align: justify;
     font-weight: 600;
-    text-align: right;
+    text-align: center;
     margin-top: 25px;
 }
 
 /*--Contact us form*/
-.contactformwrapper{
+#contactformwrapper{
     background-color:#61788C;
     height: 75vh;
 }
 
-.contactformheading h2{
+#contactformheading h2{
     color: #BFBFBF;
     text-transform: uppercase;
     font-family: 'brandon-grotesque',sans-serif;
     font-weight: 800;
+    font-size: 40px;
     text-align: center;
     margin-top: 50px;    
 }
 
-.contactformheading h4{
+#contactformheading h4{
     color: #BFBFBF;
     font-family: 'montserrat',sans-serif;
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 20px;
     text-align: center;
-    margin-top: 20px;    
+    margin-top: 25px;    
 }
 
-form label {
+#contactform label {
     color:#364C59;
     text-transform: uppercase;
-    font-family: 'montserrat',sans-serif;
-    font-weight: 800;
-    margin-top: 20px;
+    font-family: 'brandon-grotesque',sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 25px;
 }
 
 .form-text{
+    font-family: 'montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
     color:#FFFFFF;
-    margin-top: 10px;
+    margin-top: 25px;
+}
+
+#contactform button{
+    width: 25%;
+    background-color: #364C59;
+    color: #FFFFFF;
+    float: right;
 }
 
 
@@ -336,14 +354,52 @@ form label {
 
 #footerwrapper{
     height: 25vh;
-    background-color: orange;
+    
 }
 
 #footerouter{
-    background-color: green;
-    height: 100%;
+   height: 100%;
 }
 
+#footerimagery img{
+    width: 300px;
+    margin-top: 25px;
+    margin-left: 10%;
+}
+
+#footertext{
+    margin-top: 25px;
+    color: #364C59;
+    text-align: justify;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 500;
+}
+
+#footeritems{
+    margin-top: 25px;
+}
+#footeritems li{
+    margin-bottom: 25px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column-reverse;
+    
+}
+
+#footeritems a{
+    color: #364C59;
+    text-decoration: none;
+    font-family: 'brandon-grotesque', sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-left: 100px;
+   
+    
+}
+
+#footeritems i{
+    margin-right: 25px;
+}
 
 
     /*--Selection Section Styling (Things to do page only)--*/
