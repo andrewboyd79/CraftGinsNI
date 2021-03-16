@@ -56,41 +56,58 @@
 
 $("#showallbutton").click(function(){ // selects the button with showallbutton ID and runs the following function when button is clicked
         $(".barbox, .producerbox").show(); // elements with producerbox and barbox class are shown
+        let testLocations = producerInfo.filter(type=>type.id >= 0);
+        initMap(testLocations);
     })
 
 
     $("#antrimdropdown").click(function(){
         $(".barbox, .producerbox").show();
-        $(".Tyrone, .Fermanagh, .Armagh, .Derry").hide();
+        $(".Down, .Tyrone, .Fermanagh, .Armagh, .Derry").hide();
+        let testLocations = producerInfo.filter(area=>area.county === (("Antrim")));
+        initMap(testLocations);
+        });
+
+    $("#downdropdown").click(function(){
+        $(".barbox, .producerbox").show();
+        $(".Antrim, .Tyrone, .Fermanagh, .Armagh, .Derry").hide();
+        let testLocations = producerInfo.filter(area=>area.county === (("Down")));
+        initMap(testLocations);
         });
 
     $("#tyronedropdown").click(function(){
         $(".barbox, .producerbox").show();
-        $(".Down, .Antrim, .Armagh, .Derry").hide();
+        $(".Down, .Antrim, .Fermanagh, .Armagh, .Derry").hide();
+        let testLocations = producerInfo.filter(area=>area.county === ("Tyrone"));
+        initMap(testLocations);
         });
+
+    $("#fermanaghdropdown").click(function(){
+        $(".barbox, .producerbox").show();
+        $(".Down, .Antrim, .Tyrone, .Armagh, .Derry").hide();
+        let testLocations = producerInfo.filter(area=>area.county === ("Fermanagh"));
+        initMap(testLocations);
+        });
+    
 
     $("#derrydropdown").click(function(){
         $(".barbox, .producerbox").show();
         $(".Antrim,.Down, .Tyrone, .Fermanagh").hide();
-        }); 
+        let testLocations = producerInfo.filter(area=>area.county === ("Derry"));
+        initMap(testLocations);
+         });
+         
 
     $("#ginproduceronlybutton").click(function(){
         $(".barbox").hide();
+        let testLocations = producerInfo.filter(type=>type.category === ("Gin Producer"));
+        console.log(testLocations);
+        initMap(testLocations);
         });  
     
     $("#ginjointsonlybutton").click(function(){
         $(".producerbox").hide();
-        });  
-    
-
-
-
-
-
-/*
-$(".dropdown-item").click(function(){
-    if($('.dropdown-item:contains("Tyrone")')){
-        console.log("Tyrone selected");
-        $(".Down, .Antrim, .Armagh, .Derry").hide(); // div with classes Down, Antrim, Armagh, Derry are hidden
-    };
-*/
+        let testLocations = producerInfo.filter(type=>type.category === ("Gin Joint"));
+        console.log(testLocations);
+        initMap(testLocations);
+        });
