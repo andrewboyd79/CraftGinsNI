@@ -355,12 +355,16 @@ form label {
 
 .buttonsheading{
     text-transform: uppercase;
-    color: #0D0D0D;
+    color: #61788C;
     font-family: 'brandon-grotesque', sans-serif;
     font-weight: 800;
     font-style: normal;
     margin-top: 20px;
     margin-bottom: 15px;
+}
+
+.col-1 i{
+    color: #61788C;
 }
 
 .buttons button{
@@ -395,13 +399,15 @@ form label {
 
 .dropdown button {
     text-transform: uppercase;
-    background-color: #61788C;
-    color: #FFFFFF;
+    background-color: #FFFFFF;
+    color: #364C59;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
+    font-weight: 800;
     font-style: normal;
+    font-size: 20px;
     display: inline;
-    width: 75%;
+    width: 80%;
+    
 }
 
 .dropdown li a{
