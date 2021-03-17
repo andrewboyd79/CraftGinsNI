@@ -203,7 +203,7 @@ a:hover{
 
 #reviewswrapper{
     margin-top: 50px;
-    height: 100vh;    
+    max-height: 100vh;    
 }
 
 #reviewsimagery{
@@ -227,6 +227,7 @@ a:hover{
     font-weight: 800;
     font-size: 40px;
 }
+
 #reviewsimagery i{
     margin-right: 25px;
 }
@@ -241,13 +242,14 @@ a:hover{
     color:#364C59;
     
 }
+
 #reviewsouter{
     margin-top: 25px;
-    height:75vh;
+    min-height:75vh;
 }
 
 .review-content{
-    height: 50vh;
+    max-height: 50vh;
 }
 
 .review-content-image {
@@ -633,3 +635,182 @@ a:hover{
     color: #FFFFFF;
 }
 
+/*--Styling for devices 576px and under (phones)--*/
+
+@media screen and (max-width: 576px) {
+
+    #navigation{
+        margin-top: 10px;
+    }
+    
+    #nav{   
+        height: 7.5vh;    
+    }
+    
+    .navbar-brand img{
+        width: 100px;
+        }
+    
+}
+
+/*--Styling for devices between 576px and 768px (tablets/phone landscape)--*/
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+   
+#navigation{
+    margin-top: 20px;
+}
+
+#nav{   
+    height: 7.5vh;    
+}
+
+.navbar-brand img{
+    width: 200px;
+}
+   
+.navbar-list-items{
+    font-size: 18px;
+    margin-top: 25px;
+    margin-left:35%;
+}
+
+#homeheroouter{
+    background-position: center;
+    background-size:cover;    
+}
+
+#homeherotext{
+    margin-top: -35%;
+    margin-left: 40%;
+}
+
+#homeherotext h1{
+    font-size: 32px;
+    line-height: 1.2;
+}
+
+#homeherotext h4{
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+#categoriesheading h2{
+    font-size: 28px;
+}
+
+#categorieslabel h3{
+    font-size: 24px;
+}
+
+#reviewswrapper{
+    max-height: 125vh;
+    margin-top: 25px;
+}
+
+#reviewsimagery{
+    
+    width: 50vw;
+    background-position:center;
+    background-size:cover;
+}
+
+#reviewsimagery h2{
+    width: 100%;
+    margin-top: 30%;
+    margin-left: 95%;
+    color: #364C59;
+    font-size: 28px;
+    text-align: right;
+    line-height: 1.2;
+}
+
+#reviewsimagery i{
+    margin-right: 10px;
+}
+
+#reviewsimagery h3{
+    margin-top: 55%;
+    margin-left: 95%;
+    width: 100%;
+    font-size: 16px;
+    color:#364C59;
+    text-align: right;
+    line-height: 1.5;
+    
+}
+
+#reviewsouter{
+    margin-top: 10px;
+    
+}
+
+
+.review-content-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.review-content-heading{
+    margin-top: 10px;
+}
+
+.review-content-text{
+    
+    margin-top: 10px;
+    min-height: 110px;
+    width: 95%;
+}
+
+.review-content{
+    max-height: 50vh;
+}
+
+
+#contactformheading h2{
+    font-size: 24px;
+    margin-top: 10px;    
+}
+
+#contactformheading h4{  
+    margin-top: 10px;    
+}
+
+.form-text{
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#footerimagery img{
+    width: 150px;
+}
+
+#footertext{
+    font-size: 14px;
+}
+
+#footeritems a{
+    font-size: 14px; 
+    width: 100%;
+}
+
+#footeritems i{
+    margin-right: 10px;
+}
+
+}
+
+/*--Styling for devices between 768px and 992px (larger tablets)--*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+
+}
+
+/*--Styling for devices between 992px and 1200px (tablets landscape)--*/
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+
+
+}
