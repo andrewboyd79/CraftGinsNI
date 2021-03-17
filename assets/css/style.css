@@ -234,7 +234,7 @@ a:hover{
 
 #reviewsimagery h3{
     position: absolute;
-    top: 45%;
+    top: 55%;
     left: 55%;
     font-family: 'montserrat', sans-serif;
     font-weight: 500;
@@ -649,7 +649,7 @@ a:hover{
        
     .navbar-list-items{
         font-size: 12px;
-        top: 5px;
+        top: 7px;
         left:45%;
     }
     
@@ -798,14 +798,14 @@ a:hover{
     #footeritems i{
         margin-right: 10px;
     }
-    
+
     #footeritems li{
         margin-bottom: 25px;
     }  
     
     #herotext{
-        margin-top: -25%;
-        margin-left: 5%;
+        top: 35%;
+        left: 5%;
     }
     
     #herotext h1{
@@ -920,6 +920,11 @@ a:hover{
     
     .modal-body{
         width: 100%;
+    }
+
+    .modal-content{
+        width: 90vw;
+        margin: 0 auto;
     }
     
     .modal-content-title{
