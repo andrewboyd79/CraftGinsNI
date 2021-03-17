@@ -9,7 +9,7 @@ function initMap (testLocations) {
    });
 
    //creates new information window
-   let infowindow = new google.maps.InfoWindow; 
+   let infowindow = new google.maps.InfoWindow(); 
    let marker, i;
 
    //iterates through the locations variable to create markers and position them on the map
@@ -24,8 +24,8 @@ function initMap (testLocations) {
          return function() {
             infowindow.setContent(testLocations[i].title);
             infowindow.open(map, marker);
-         }
+         };
    })
    (marker, i));}
-};
+}
 
