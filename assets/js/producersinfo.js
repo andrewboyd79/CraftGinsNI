@@ -191,4 +191,4 @@ var producerInfo = [
     "category":"Gin Joint",
     "website":"https://www.facebook.com/bennigansbar/?ref=page_internal"
 }
-]
+];
