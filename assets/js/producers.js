@@ -51,14 +51,14 @@
         `;
 
         mainContainer1.append(box);
-    };
+    }
 
 
 $("#showallbutton").click(function(){ // selects the button with showallbutton ID and runs the following function when button is clicked
         $(".barbox, .producerbox").show(); // elements with producerbox and barbox class are shown
         let testLocations = producerInfo.filter(type=>type.id >= 0);
         initMap(testLocations);
-    })
+    });
 
 
     $("#antrimdropdown").click(function(){
