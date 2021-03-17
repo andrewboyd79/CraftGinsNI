@@ -4,7 +4,7 @@
         let producerInfoContent = producerInfo[i];
         var box = document.createElement("div");
         box.id=`${producerInfoContent.title}`;
-        box.className= `${producerInfoContent.county} ${producerInfoContent.description}box col-6`;
+        box.className= `${producerInfoContent.county} ${producerInfoContent.description}box col-12 col-md-6`;
         
         box.innerHTML=`
         
@@ -31,7 +31,7 @@
                             <div class="row">
                                 <h5 class="col-12 modal-content-title">${producerInfoContent.address}</h5>
                                 <p class="col-12 modal-content-text">${producerInfoContent.detailed}</p>
-                                <ul class="col-4 modal-content-info">What's on offer?
+                                <ul class="col-12 col-md-4 modal-content-info">What's on offer?
                                     <li>${producerInfoContent.type1}</li>
                                     <li>${producerInfoContent.type2}</li>
                                     <li>${producerInfoContent.type3}</li>
