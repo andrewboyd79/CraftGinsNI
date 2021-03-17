@@ -3,7 +3,7 @@ function initMap (testLocations) {
 
    //creates new map, sets relevant options and places it in the 'map' div element
    let map = new google.maps.Map(document.getElementById('map'), { 
-      zoom: 8.65, // sets maps zoom
+      zoom: 8.5, // sets maps zoom
       center: new google.maps.LatLng(54.612297, -6.415621), 
       mapTypeId: google.maps.MapTypeId.ROADMAP 
    });
