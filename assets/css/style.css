@@ -974,8 +974,8 @@ a:hover{
    
 .navbar-list-items{
     font-size: 18px;
-    margin-top: 25px;
-    margin-left:35%;
+    top: 20px;
+    left:45%;
 }
 
 #homeheroouter{
@@ -984,18 +984,20 @@ a:hover{
 }
 
 #homeherotext{
-    margin-top: -35%;
-    margin-left: 40%;
+    top: 70%;
+    left: 10%;
 }
 
 #homeherotext h1{
     font-size: 32px;
     line-height: 1.2;
+    text-align: right;
 }
 
 #homeherotext h4{
     line-height: 1.5;
     font-size: 18px;
+    text-align: right;
 }
 
 #categoriesheading h2{
@@ -1007,7 +1009,7 @@ a:hover{
 }
 
 #reviewswrapper{
-    max-height: 125vh;
+    min-height: 125vh;
     margin-top: 25px;
 }
 
@@ -1020,8 +1022,8 @@ a:hover{
 
 #reviewsimagery h2{
     width: 100%;
-    margin-top: 30%;
-    margin-left: 95%;
+    top: 30%;
+    left: 45%;
     color: #364C59;
     font-size: 28px;
     text-align: right;
@@ -1033,13 +1035,7 @@ a:hover{
 }
 
 #reviewsimagery h3{
-    margin-top: 55%;
-    margin-left: 95%;
-    width: 100%;
-    font-size: 16px;
-    color:#364C59;
-    text-align: right;
-    line-height: 1.5;
+    display: none;
     
 }
 
@@ -1088,7 +1084,7 @@ a:hover{
 }
 
 #footerimagery img{
-    width: 150px;
+    display: none;
 }
 
 #footertext{
@@ -1105,8 +1101,8 @@ a:hover{
 }
 
 #herotext{
-    margin-top: -20%;
-    margin-left: 0%;
+    top: 35%;
+    left: 5%;
 }
 
 #herotext h1{
@@ -1187,11 +1183,11 @@ a:hover{
 }
 
 .producerimage{
-    height: 200px;
+    height: 250px;
 }
 
 .barimage{
-    height: 200px;
+    height: 250px;
 }
 
 .producerheading{
@@ -1207,11 +1203,11 @@ a:hover{
 }
 
 .producerbody{
-   font-size: 12px;
+   font-size: 14px;
 }
 
 .barbody{
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .infobutton{
@@ -1255,13 +1251,134 @@ font-size: 24px;
     font-size: 14px;
 }
 
-
 }
 
 /*--Styling for devices between 768px and 992px (larger tablets)--*/
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
+           
+     .navbar-brand img{
+         width: 200px;
+     }
+    
+     .navbar-list-items{
+         top: 20px;
+         left:35%;
+         font-size: 22px;
+     }
+    
+     .navbar-list-items i{
+         margin-right: 20px;
+     } 
 
+     #homeheroouter{
+        background-position: center;
+    }
+    
+    #homeherotext{
+        top: 75%;
+        left: 40%;
+        position: absolute;
+    }
+    
+    #homeherotext h1{
+        font-size: 32px;
+        line-height: 1.2;
+        text-align: right;
+    }
+    
+    #homeherotext h4{
+        font-size: 16px;
+        text-align: right;
+    }
+    
+    #categoriesheading h2{
+        font-size: 20px;
+    }
+    
+    #categoriescontent img{
+        width: 200px;
+        height: 200px;     
+    }
+    
+    #categorieslabel h3{
+        font-size: 16px;
+        color:#8C8C8C;
+        margin-bottom: 25px;
+    }
+
+    #reviewswrapper{
+        margin-top: 25px;
+        margin-bottom: 25px;   
+    }
+      
+    #reviewsimagery h2{
+        top: 25%;
+        left: 5%;
+        width: 25%;
+        font-size: 28px;
+    }
+    
+    #reviewsimagery h3{
+        display: none; 
+    }
+    
+    .review-content-image {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .review-content-heading{
+    font-size: 18px;
+    }
+    
+    .review-content-text{
+        font-size: 14px;
+    }
+    
+    .review-content-reviewer{
+        font-size: 16px;
+    }
+
+    #contactformwrapper{
+        background-color:#61788C;
+        min-height: 75vh;
+    }
+    
+    #contactformheading h2{
+        font-size: 28px;   
+    }
+    
+    #contactformheading h4{
+        font-size: 16px;
+        margin-top: 10px;    
+    }
+    
+    #contactform label {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    
+    .form-text{
+        margin-top: 10px;
+    }
+        
+    #footerimagery img{
+        width: 200px;
+        margin-left: 5%;
+    }
+    
+    #footertext{
+        font-size: 14px;
+    }
+    
+    #footeritems a{
+        font-size: 12px;    
+    }
+    
+    #footeritems i{
+        margin-right: 10px;
+    }
 
 }
 
