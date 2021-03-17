@@ -35,8 +35,8 @@ body{
 
  .navbar-brand img{
      width: 300px;
-     margin-top: -30px;
-     margin-left: 5%;
+     top: -30px;
+     left: 5%;
      position: absolute;
  }
 
@@ -47,8 +47,8 @@ body{
      text-decoration: none;
      color: #FFFFFF;
      position: absolute;
-     margin-top: 35px;
-     margin-left:25%;
+     top: 35px;
+     left:25%;
  }
 
  .navbar-list-items i{
@@ -76,8 +76,8 @@ a:hover{
 }
 
 #homeherotext{
-    margin-top: -20%;
-    margin-left: 60%;
+    top: 70%;
+    left: 60%;
     position: absolute;
 }
 
@@ -99,7 +99,7 @@ a:hover{
     line-height: 1.2;
     font-size: 28px;
     text-align: right;
-    }
+}
 
 
 /*--Hero Section Styling (Places to go page)--*/
@@ -114,8 +114,8 @@ a:hover{
 }
 
 #herotext{
-    margin-top: -10%;
-    margin-left: 20%;
+    top: 30%;
+    left: 20%;
     position: absolute;
 }
 
@@ -203,11 +203,11 @@ a:hover{
 
 #reviewswrapper{
     margin-top: 50px;
-    max-height: 100vh;    
+    margin-bottom: 50px;   
 }
 
 #reviewsimagery{
-    height: 50vh;
+    min-height: 50vh;
     background-image: url('../images/k-mitch-hodge-CTB2vC1PlTM-unsplash_16_9.jpg');
     background-position: cover;
     background-repeat: no-repeat;
@@ -218,7 +218,7 @@ a:hover{
 
 #reviewsimagery h2{
     position: absolute;
-    margin-top: 5%;
+    top: 25%;
     margin-left: 55%;
     width: 25%;
     color: #FFFFFF;
@@ -234,8 +234,8 @@ a:hover{
 
 #reviewsimagery h3{
     position: absolute;
-    margin-top: 15%;
-    margin-left: 55%;
+    top: 45%;
+    left: 55%;
     font-family: 'montserrat', sans-serif;
     font-weight: 500;
     font-size: 28px;
@@ -245,7 +245,7 @@ a:hover{
 
 #reviewsouter{
     margin-top: 25px;
-    min-height:75vh;
+    min-height:50vh;
 }
 
 .review-content-image {
@@ -257,7 +257,6 @@ a:hover{
 
 .review-content-heading{
     margin-top: 25px;
-    
     color: #8C8C8C;
     text-transform: uppercase;
     font-family: 'brandon-grotesque',sans-serif;
@@ -287,7 +286,7 @@ a:hover{
 
 #contactformwrapper{
     background-color:#61788C;
-    min-height: 100vh;
+    min-height: 75vh;
 }
 
 #contactformheading h2{
@@ -336,8 +335,7 @@ a:hover{
 /*--Footer Dection (All pages)--*/
 
 #footerwrapper{
-    height: 25vh;
-    
+    min-height: 25vh;    
 }
 
 #footerouter{
@@ -434,7 +432,7 @@ a:hover{
     margin: 50px auto;
     width: 90vw;
     height: 75vh;
-    padding: 50px;
+    padding: 25px;
     background-color: #BFBFBF;
 }
     
@@ -640,18 +638,19 @@ a:hover{
     }
     
     #nav{   
-        height: 7.5vh;    
+        margin-top: 10px;
+        height: 5vh;    
     }
     
     .navbar-brand img{
         width: 100px;
-        margin-top: -10px;
+        top: -15px;
     }
        
     .navbar-list-items{
         font-size: 12px;
-        margin-top: 15px;
-        margin-left:45%;
+        top: 5px;
+        left:45%;
     }
     
     #homeheroouter{
@@ -660,18 +659,20 @@ a:hover{
     }
     
     #homeherotext{
-        margin-top: -50%;
-        margin-left: 20%;        
+        top: 75%;
+        left: 20%;        
     }
     
     #homeherotext h1{
         font-size: 18px;
         line-height: 1.5;
+        text-align: center;
     }
     
     #homeherotext h4{
         line-height: 1.5;
         font-size: 10px;
+        text-align: center;
     }
     
     #categoriesheading h2{
@@ -690,8 +691,9 @@ a:hover{
     }
     
     #reviewswrapper{
-        min-height: 225vh;
+        min-height: 150vh;
         margin-top: 25px;
+        margin-bottom: 25px;
     }
     
     #reviewsimagery{
@@ -703,12 +705,14 @@ a:hover{
     
     #reviewsimagery h2{
         width: 100%;
-        margin-top: 10%;
-        margin-left: 5%;
+        top: 10%;
+        right: 5%;
         text-align: center;
         color: #FFFFFF;
         font-size: 18px;
         line-height: 1.2;
+        text-align: right;
+        width: 75%;
     }
     
     #reviewsimagery i{
@@ -747,7 +751,7 @@ a:hover{
     
     #contactformwrapper{
         background-color:#61788C;
-        min-height: 100vh;
+        min-height: 75vh;
     }
         
     #contactform label {
@@ -786,7 +790,7 @@ a:hover{
         width: 100%;
         font-size: 14px;
     }
-    
+
     #footeritems a{
         font-size: 14px; 
     }
@@ -794,15 +798,9 @@ a:hover{
     #footeritems i{
         margin-right: 10px;
     }
-
-    #footeritems ul{
-        display: inline;
-        float: left;
-    }
-
+    
     #footeritems li{
-        width: 100%;
-        margin-bottom: 25px;   
+        margin-bottom: 25px;
     }  
     
     #herotext{
