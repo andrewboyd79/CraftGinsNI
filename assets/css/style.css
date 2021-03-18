@@ -48,8 +48,8 @@ body {
   text-decoration: none;
   color: #FFFFFF;
   position: absolute;
-  top: 35px;
-  margin-left: 25%;
+  top: 30px;
+  margin-left: 30%;
 }
 
 .navbar-list-items i {
@@ -78,7 +78,7 @@ a:hover {
 
 #homeherotext {
   top: 70%;
-  left: 60%;
+  left: 45%;
   position: absolute;
 }
 
@@ -289,11 +289,11 @@ a:hover {
 
 #contactformwrapper {
   background-color: #61788C;
-  min-height: 75vh;
+  min-height: 85vh;
 }
 
 #contactformheading h2 {
-  color: #BFBFBF;
+  color: #FFFFFF;
   text-transform: uppercase;
   font-family: 'brandon-grotesque', sans-serif;
   font-weight: 800;
@@ -312,7 +312,7 @@ a:hover {
 }
 
 #contactform label {
-  color: #FFFFFF;
+  color: #0D0D0D90;
   text-transform: uppercase;
   font-family: 'brandon-grotesque', sans-serif;
   font-weight: 600;
@@ -347,7 +347,7 @@ a:hover {
 }
 
 #footerimagery img {
-  width: 300px;
+  width: 200px;
   margin-top: 25px;
   margin-left: 10%;
 }
@@ -653,8 +653,8 @@ a:hover {
   }
   .navbar-list-items {
     font-size: 12px;
-    top: 7px;
-    left: 45%;
+    top: 10px;
+    left: 15%;
   }
   #homeheroouter {
     background-position: center;
@@ -771,10 +771,11 @@ a:hover {
     font-size: 14px;
   }
   #footeritems i {
-    margin-right: 10px;
+    margin-right: 5px;
   }
   #footeritems li {
     margin-bottom: 25px;
+    display: inline-flex;
   }
   #herotext {
     top: 35%;
@@ -913,7 +914,7 @@ a:hover {
   .navbar-list-items {
     font-size: 18px;
     top: 20px;
-    left: 45%;
+    margin-left: 45%;
   }
   #homeheroouter {
     background-position: center;
@@ -1002,9 +1003,9 @@ a:hover {
   #footertext {
     font-size: 14px;
   }
-  #footeritems a {
+  #footeritems li {
     font-size: 14px;
-    width: 100%;
+    display: inline-flex;
   }
   #footeritems i {
     margin-right: 10px;
@@ -1139,7 +1140,7 @@ a:hover {
   }
   .navbar-list-items {
     top: 20px;
-    left: 35%;
+    margin-left: 35%;
     font-size: 22px;
   }
   .navbar-list-items i {
@@ -1242,7 +1243,7 @@ a:hover {
   }
   .navbar-list-items {
     top: 30px;
-    left: 35%;
+    margin-left: 35%;
   }
   #homeheroouter {
     background-position: center;
@@ -1299,7 +1300,7 @@ a:hover {
     margin-top: 10px;
   }
   #footerimagery img {
-    width: 200px;
+    width: 150px;
     margin-left: 5%;
   }
   #footertext {
