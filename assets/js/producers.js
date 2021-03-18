@@ -1,8 +1,6 @@
 var mainContainer1 = document.getElementsByClassName("datawrapper")[
-    0]; //fetches the div with the ID demo1
-  for (var i = 0; i < producerInfo
-    .length; i++) { //loops through every object in the producersInfo.js
-    let producerInfoContent = producerInfo[i];
+    0]; //fetches the div with datawrapper class
+  for (let producerInfoContent of producerInfo) { //loops through every object in the producersInfo.js
     var box = document.createElement("div");
     box.id = `${producerInfoContent.title}`;
     box.className =
@@ -60,67 +58,65 @@ var mainContainer1 = document.getElementsByClassName("datawrapper")[
     function() { // selects the button with showallbutton ID and runs the following function when button is clicked
       $(".barbox, .producerbox")
         .show(); // elements with producerbox and barbox class are shown
-      let testLocations = producerInfo.filter(type => type.id >= 0);
-      initMap(testLocations);
+      let locations = producerInfo.filter(type => type.id >= 0);
+      initMap(locations);
     });
   
   
   $("#antrimdropdown").click(function() {
     $(".barbox, .producerbox").show();
     $(".Down, .Tyrone, .Fermanagh, .Armagh, .Derry").hide();
-    let testLocations = producerInfo.filter(area => area.county === ((
+    let locations = producerInfo.filter(area => area.county === ((
       "Antrim")));
-    initMap(testLocations);
+    initMap(locations);
   });
   
   $("#downdropdown").click(function() {
     $(".barbox, .producerbox").show();
     $(".Antrim, .Tyrone, .Fermanagh, .Armagh, .Derry").hide();
-    let testLocations = producerInfo.filter(area => area.county === ((
+    let locations = producerInfo.filter(area => area.county === ((
       "Down")));
-    initMap(testLocations);
+    initMap(locations);
   });
   
   $("#tyronedropdown").click(function() {
     $(".barbox, .producerbox").show();
     $(".Down, .Antrim, .Fermanagh, .Armagh, .Derry").hide();
-    let testLocations = producerInfo.filter(area => area.county === (
+    let locations = producerInfo.filter(area => area.county === (
       "Tyrone"));
-    initMap(testLocations);
+    initMap(locations);
   });
   
   $("#fermanaghdropdown").click(function() {
     $(".barbox, .producerbox").show();
     $(".Down, .Antrim, .Tyrone, .Armagh, .Derry").hide();
-    let testLocations = producerInfo.filter(area => area.county === (
+    let locations = producerInfo.filter(area => area.county === (
       "Fermanagh"));
-    initMap(testLocations);
+    initMap(locations);
   });
   
   
   $("#derrydropdown").click(function() {
     $(".barbox, .producerbox").show();
     $(".Antrim,.Down, .Tyrone, .Fermanagh").hide();
-    let testLocations = producerInfo.filter(area => area.county === (
+    let locations = producerInfo.filter(area => area.county === (
       "Derry"));
-    initMap(testLocations);
+    initMap(locations);
   });
   
   
   $("#ginproduceronlybutton").click(function() {
     $(".barbox, .producerbox").show();
     $(".barbox").hide();
-    let testLocations = producerInfo.filter(type => type.category === (
+    let locations = producerInfo.filter(type => type.category === (
       "Gin Producer"));
-    console.log(testLocations);
-    initMap(testLocations);
+    initMap(locations);
   });
   
   $("#ginjointsonlybutton").click(function() {
     $(".barbox, .producerbox").show();
     $(".producerbox").hide();
-    let testLocations = producerInfo.filter(type => type.category === (
+    let locations = producerInfo.filter(type => type.category === (
       "Gin Joint"));
-    console.log(testLocations);
-    initMap(testLocations);
+    initMap(locations);
   });
