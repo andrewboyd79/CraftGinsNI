@@ -301,7 +301,7 @@ The following images have been used for this project:
 ## Code
 - Google Maps code taken from https://stackoverflow.com/questions/15531390/adding-array-of-markers-in-google-map and amended for purpose.  Further information was taken from the Google Maps JavaScript API documentation and amended (https://developers.google.com/maps/documentation/javascript/overview)
 - Additional information was taken from JavaScript & JQuery interactive front-end web development book by Jon Duckett
-- 
+- Email JS code taken from website documentation (https://www.emailjs.com/docs/)
 
 ## Acknowledgements
 - Thanks to my mentor (Aaron Sinnott) for his guidance and help during this project
