@@ -195,9 +195,9 @@ a:hover {
 
 #categorieslabel h3 {
   font-family: 'montserrat', sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 28px;
-  color: #8C8C8C;
+  color: #364C59;
   margin-bottom: 50px;
 }
 
@@ -303,16 +303,16 @@ a:hover {
 }
 
 #contactformheading h4 {
-  color: #BFBFBF;
+  color: #FFFFFF;
   font-family: 'montserrat', sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 20px;
   text-align: center;
   margin-top: 25px;
 }
 
 #contactform label {
-  color: #364C59;
+  color: #FFFFFF;
   text-transform: uppercase;
   font-family: 'brandon-grotesque', sans-serif;
   font-weight: 600;
