@@ -69,8 +69,12 @@ maps.js
 producers.js
 
 ![producers.js jshint linter page 1](tests/producers.js_jshint_report_p1.PNG)
-![producers.js jshint linter page 2](tests/producers.js_jshint_report_p2.PNG)
-![producers.js jshint linter page 3](tests/producers.js_jshint_report_p3.PNG)
+
+
+![producers.js jshint linter page 2](tests/producer.js_jshint_report_p2.PNG)
+
+
+![producers.js jshint linter page 3](tests/producer.js_jshint_report_p3.PNG)
 
 sendMail.js
 
@@ -91,12 +95,16 @@ Acceptance criteria:
 - End users should be able to find information on craft gin producers in Northern Ireland.  
 - This information should be available on all device sizes.
 
-Evidence/Oservations:
+Evidence/Observations:
 - The placestogo.html page contains information on the location of each gin producer and gin joint.
 - The interactive maps displays their location and the content below gives more information on the producer/bar, their address, what's available from each  
 
 ![User story 1 evidence screenshot 1](tests/UserStory1EvidenceScreenshot1.PNG)
+
+
 ![User story 1 evidence screenshot 2](tests/UserStory1EvidenceScreenshot2.PNG)
+
+
 ![User story 1 evidence screenshot 3](tests/UserStory1EvidenceScreenshot3.PNG)
 
 
@@ -110,11 +118,13 @@ Acceptance criteria:
 - End users should be able to find information on where they might be able to buy/sample gin 
 - This information should be available on all device sizes.
 
-Evidence/Oservations:
+Evidence/Observations:
 - The detailed information relating to each gin producer outlines which gins types they have available - this let's the user know what gin this producer has to offer
 - The detailed information on the gin joint gives information on each bar
 
 ![User story 2 evidence screenshot 1](tests/UserStory2EvidenceScreenshot1.PNG)
+
+
 ![User story 2 evidence screenshot 2](tests/UserStory2EvidenceScreenshot2.PNG)
 
 Outcome: Test successful
@@ -127,14 +137,18 @@ Acceptance criteria:
 - End users should be able to get the location for each gin producer / gin joint 
 - This information should be available on all device sizes.
 
-Evidence/Oservations:
+Evidence/Observations:
 - The interactive map on the placestogo.html page displays the location of all/some of the establishments
 - The showall button displays all gin producers / gin joints - checked that all appear on map (see screenshot)
 - Selecting 'Down' from the dropdown displays all gin producers / gin joints in County Down - checked they appear on map (see screenshot)
 - Selecting Gin Joints from the dropdown displays all gin joints - checked they appear on map (see screenshot)
 
 ![User story 3 evidence screenshot 1](tests/UserStory3EvidenceScreenshot1.PNG)
+
+
 ![User story 3 evidence screenshot 2](tests/UserStory3EvidenceScreenshot2.PNG)
+
+
 ![User story 3 evidence screenshot 3](tests/UserStory3EvidenceScreenshot3.PNG)
 
 Outcome: Test successful
@@ -147,11 +161,13 @@ Acceptance criteria:
 - End users should be able to link directly to the gin producer / gin joint website 
 - This alternative means should be available on all device sizes.
 
-Evidence/Oservations:
+Evidence/Observations:
 - The more information section of each gin producer / gin joint has another button linking to the producers website
 - This opens the website is a separate window
 
 ![User story 4 evidence screenshot 1](tests/UserStory4EvidenceScreenshot1.PNG)
+
+
 ![User story 4 evidence screenshot 2](tests/UserStory4EvidenceScreenshot2.PNG)
 
 Outcome: Test successful
@@ -164,16 +180,17 @@ Acceptance criteria:
 - The website, should display high quality content throughout 
 - This information should be available on all device sizes.
 
-Evidence/Oservations:
+Evidence/Observations:
 - The evidence from the previous 4 test scripts demonstrates that information is available and accessible for users and showcases each product/establishment
 
 Outcome: Test successful
 
 ---
+
 TO BE COMPLETED
 # **Responsiveness Testing**
 
-The website has been designed to be responsive to different screen sizes. The following has been checked on both mobile (android mobile phone running Android 10 and MS Edge mobile version) and tablet (ipad/safari browser) sized devices.
+The website has been designed to be responsive to different screen sizes. The following has been checked on both mobile (iPhone SE/safari) and tablet (ipad/safari browser) sized devices.
 
 ## Mobile
 
