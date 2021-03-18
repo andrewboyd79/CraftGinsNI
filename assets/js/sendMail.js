@@ -1,3 +1,4 @@
+//code taken from https://www.emailjs.com/docs/ amended accordingly
 function sendMail(contactForm) {
     emailjs.send("service_mcfsn9l",
       "template_ilc3tsk", { //passes in the service name, template ID and template paramters
