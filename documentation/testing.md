@@ -187,44 +187,36 @@ Outcome: Test successful
 
 ---
 
-TO BE COMPLETED
 # **Responsiveness Testing**
 
 The website has been designed to be responsive to different screen sizes. The following has been checked on both mobile (iPhone SE/safari) and tablet (ipad/safari browser) sized devices.
 
 ## Mobile
 
-- Header - the navigation elements of the header section collapse under a menu button as expected. Separation markers between items (seen on larger screens) are not visible as expected. Clicking the logo returns the user to the Home page from all pages.  Clicking the Home, Gallery and Contact Us links navigate the user to the respective pages successfully
-- Hero section - hero image is not displayed on mobile as expected and has been replaced with coloured background
-- 3 department sections - buttons are reduced in size with smaller font sizing used; layout has been amended (2x columns of buttons side by side) with the departmental information pushed beneath the buttons filling the entire width of the screen. All buttons previously tested in User stories testing. All buttons size and align correctly
-- Footer - the separation markers have been removed at this screen size as expected. Links display in 2x columns. Clicking each of the social media links opens the relevant website (Facebook, Youtube or Twitter) in new windows as expected.  The hospital link opens a new window with the P-L Services website as this is not yet linked to a larger organisation website.
+- Reviews section displays reviews singly as expected
+- Footer section logo is hidden as expected
+- Gin Producer / Gin joint content is displayed singly across full screen width as expected
 
 ## Tablet 
 
-- Header - the navigation elements have their font size reduced as expected. Separation markers between items remain as expected. Clicking the logo returns the user to the Home page from all pages.  Clicking the Home, Gallery and Contact Us links navigate the user to the respective pages successfully
-- Hero section - hero image is displayed at this screen size as expected
-- 3 department sections - size of the buttons has been amended to ensure they can be clicked easily on this device size with smaller font sizing used; layout has been amended (2x columns of buttons side by side) with the departmental information pushed beneath the buttons filling the entire width of the screen. All buttons previously tested in User stories testing and size/align correctly
-- Footer - Links display across the page with the font size being reduced to reflect the screen size. Clicking each of the social media links opens the relevant website (Facebook, Youtube or Twitter) in new windows as expected.  The hospital link opens a new window with the P-L Services website as this is not yet linked to a larger organisation website.
+- Imagery at top of imagery only takes half page width as expect with the sub heading text not being displayed as expected
+- Reviews are displayed 2 across as expected
+- Footer section logo is hidden as expected
 
 ---
 
 # **Browser testing**
 The website has been tested on the following browsers:
-- Firefox browser (Version 84.0 (64-bit))
-- Microsoft Edge browser (Version 87.0.664.66 (Official build) (64-bit))
-- Chrome Browser (Version 87.0.4280.88 (Official Build) (64-bit))
+- Firefox browser (Version 86.0 (64-bit))
+- Microsoft Edge browser (Version 89.0.774.54 (Official build) (64-bit))
+- Chrome Browser (Version 89.0.4389.90 (Official Build) (64-bit))
 - Safari Browser
-- MS Edge Mobile (Version45.11.24.5118)
 
 ---
 
 # Bugs
-The following bugs were noted during development of the P-L Services website:
-- issues getting modal elements to open initially - issue due to missing javascript scripts - resolved by adding relevant javascript links/scripts
-- issues getting alignment of navbar elements initially - issue involved elements not being floated/positioned correctl - resolved in style.css following review of Code Institute teaching modules/Slack
-- issues over setting up Bootstrap grid to operate responsively at different screen sizes - issue was down to lack of knowledge - resolved following review of Code Institute teaching modules/Slack/Youtube videos on the topic
-- issues with colouring of downloaded icon files - issued due to colour of icons being set within .svg file - resolved by amending colour setting within the .svg file following review of [Stack Overflow article](https://stackoverflow.com/questions/22252472/how-to-change-the-color-of-an-svg-element)
-- issue with numbers on contact-us.html being displayed in blue on ipad - issue still being investigated 
-- errors generated on testing of gallery.html relating to spaces in an image name - resolved by renaming files in GitPod and amended path within gallery.html
-- errors generated on testing of style.css relating to margins being set as Margin: 20 auto - resolved by amending relevant lines in style.css to be Margin: 20px auto; 
-- errors generated on testing of contact-us.html relating to use of datetime type and associated placeholder not being legal - resolved by amended type in contact-us.html
+The following bugs were noted during development of the Craft Gins NI website:
+- issues getting dropdown function to operate correctly initially - issue due to incorrectly formatted JQuery - resolved by amending JQuery syntax following research
+- issues getting markers to display on Google Maps initially - only single marker would display - resolved by amendeing javascript code and separating lat/lng variables within the producersinfo.js file
+- issues getting sendEmail to operate correctly - test email from within sendMail worked but not on form submission - form labels/names/id needed set correctly using information set in documentation
+- producers.js appeneded elements incorectly - elements were not being appended to correct divs - used template literals to create content and remove need for extensive appending
