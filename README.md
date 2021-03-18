@@ -24,8 +24,7 @@ The user should be taken on a journey of discovery of the craft gins of Northern
     - [User Considerations](#User-considerations)
     - [Wireframe diagrams](#Wireframe-diagrams)
         - [Home Page](#Home-page)
-        - [Producers Page](#Producers-page)
-        - [Bars Page](#Bars-page)
+        - [Places to go Page](#Places-to-go-page)
 
 
     - [Design Considerations](#Design-considerations)
@@ -37,8 +36,7 @@ The user should be taken on a journey of discovery of the craft gins of Northern
     - [Initial Release Features](#Initial-release-features)
         - [Global Features](#Global-features)
         - [Home Page Features](#Home-page-features)
-        - [Producers Page Features](#Producers-page-features)
-        - [Bars Page Features](#Bars-page-features)
+        - [Places to go Page Features](#places-to-go-page-features)
 
     - [Features for future releases](#Features-for-future-releases)
 
@@ -114,7 +112,11 @@ The following user stories have been developed to outline some of the benefits t
 ## User considerations
 Consideration has been given to the following when developing a website which meets the needs of both the business and the users:
 
-TO BE COMPLETED
+- Each gin producer included has an informative website detailing their history, heritage, location and drinks offering; however there is to date no single source of knowledge
+of this information. This webasite aims to supplement these resources not replace them.
+- Some of the producers and bars/restaurants have a web presence currently limited to Facebook and other social media channels. A website of this nature would increase their
+web presence and hopefully reach a wider audience.
+- Many producers also produce other drinks/spirits and the website has the potential to scale up over the course of time to include whiskey or craft beers for instance.
 
 ## Wireframe diagrams
 
@@ -130,7 +132,7 @@ TO BE COMPLETED
  - [Tablet view](documentation/wireframes/producertab.pdf)
  - [Desktop view](documentation/wireframes/producerdsk.pdf)
 
-### Bars Page
+### Bars Page (Producers and Bars Pages combined in live website)
 
  - [Mobile view](documentation/wireframes/barmob.pdf)
  - [Tablet view](documentation/wireframes/bartab.pdf)
@@ -159,15 +161,10 @@ The combination has been checked on Adobe Colour; no potential conflicts have be
 
 ### Icons
 The following Font Awesome icons from will be used throughout this website:
-- [Compass](https://fontawesome.com/icons/compass?style=regular)
-- [Directions]( https://fontawesome.com/icons/directions?style=solidbrands)
-- [Wine-bottle]( https://fontawesome.com/icons/wine-bottle?style=solid)
 - [Glass-whiskey]( https://fontawesome.com/icons/glass-whiskey?style=solid)
-- [Envelope]( https://fontawesome.com/icons/envelope?style=solid)
+- [Compass]( https://fontawesome.com/icons/compass?style=regular)
+- [Heart]( https://fontawesome.com/icons/heart?style=regular)
 - [Maps-signs]( https://fontawesome.com/icons/map-signs?style=solid)
-- [Map]( https://fontawesome.com/icons/map?style=regular)
-- [Twitter](https://fontawesome.com/icons/twitter?style=brands)
-- [Youtube](https://fontawesome.com/icons/youtube?style=brands)
 
 ---
 
@@ -177,39 +174,41 @@ The website will initially be developed as a Minimal Viable Product (MVP) and de
 ## Initial release features
 Based on importance/feasability analysis the following features will be available in the initial release:
 
-- An interactive map (Google Maps) which allows user to display the location of gin producers and bars/restaurants
-- At a glance and detailed information of each gin producer and bar/restaurant which can be filtered to restrict the geographic region being searched
-- Contact form to allow users to recommend other producers/establishments
+- An interactive map (Google Maps) which allows user to display the location of gin producers and bars/restaurants - the information displayed on the map will be filterable so the user can see the locations by type or county
+- At a glance(basic overview) and detailed information on each gin producer and bar/restaurant; this infomration is filtered and displayed in conjunction with the interactive map
+- Contact form to allow users to recommend other producers/establishments to be featured on the website
+- The site will include reviews of the most popular craft gins from Northern Ireland
 - The site should have clear navigation section/elements to guide the user and should directly link to producers or bars/restaurant websites
 
 ## Global Features
 The following features will persist across all website pages to provide a consitent look and feel:
  - Header section
-    - Logo - the logo (.png file) will be located in the top left portion of the header on desktop and mobile screens and move to the middle on mobile; it will provide consistent branding.  Clicking on the logo returns the user to the home page.
-    - Navbar - the items in the navigation bar will be located on the right hand side of the header and will provide a means of moving between pages. On a mobile device the items will form a dropdown menu.  Clicking each name will link the user to the relevant page.  An interactive element (changing colour size of link) will be present on desktop/tablet sizes.
-    - The header will act size responsively and on mobile sized devices will collapse to a menu bar with the links being displayed vertically when selected.
+    - Logo - the logo (.png file) will be located in the top left portion of the header; it will provide consistent branding.  Clicking on the logo returns the user to the home page.
+    - Navbar - the items in the navigation bar will be located on the right hand side of the header and will provide a means of moving between pages. Clicking each name will link the user to the relevant page.
+    - The header will size responsively.
 
 - Footer Section
-    - Social Media Links - these links will be positioned to the right hand side of the footer.  Clicking each will open a new tab and take the user to the appropriate social media platform.
+    - The footer will include a description of the purpose of the website and will have navigation links.
     - The footer elements will resize responsively with elements being displayed vertically on mobile sized devices.
 
 ## Home Page Features
- - The Home Page will feature a large hero image stretching the full width of the screen on all devices. An element of interactivity is present with the subheading fading in when the user hovers over the hero image.
-
+ - The Home Page will feature a large hero image stretching the full width of the screen on all devices.
+ - Under the hero section will be a category/selection section which at launch will only have one item but will be used as the site develops to direct the user to additional content.
  - The Home Page will also feature a review section which will short extracts from reviews of the featured gins or bars/restaurants.  On desktop sized diplays the reviews will be presented side by side. On mobile sized displays the reviews will be displayed singly.
+- The contact us form is located towards the bottom of the page and allows the users to contact the website to make suggestions.  The form then sends an email (using email JS) to the development team to inform them.
 
-- Towards the bottom of the Home Page the contact form will be located.
+## Places to go Page Features
+- The Places to go page starts with a half page hero image at the top of the page to provide user interest.
+- The section which follows allowa the user to make selections about the content to be displayed.  The user selects a region/county or a type from the dropdown menus - or can choose to show all which also acts as a 'reset' button.
+- On making a selection the interactive map displays the relevant points on the map and the content under the map is changed based on the users choice i.e. selecting Antrim populates the Antrim Gin Producers and Gin Joints on the map and reduces the information presented to only those from the county of Antrim.
 
-## Producer Page Features
-- TO BE COMPLETED
-
-## Bars Page Features
-- TO BE COMPLETED
 
 ## Features for future releases
 The following features will be added to the website in future releases:
 
-- TO BE COMPLETED
+- Adding directions functionality to help the user navigate to the relevant establishment
+- Ability to select individual locations to be included on the map
+- Include additional categories/content related to whiskey/craft beer producers 
 ---
 
 # **Technologies Used**
@@ -237,19 +236,37 @@ A separate [testing.md](documentation/testing.md) file has been created to recor
 ---
 
 # **Deployment**
-TO BE COMPLETED
 
-The CraftGinsNI website has been deployed using GitHub Pages. The following  steps, detailed below, were taken during the process:
+The CraftGinsNI website has been deployed using GitHub Pages. The following  steps, detailed below, were taken during the deployment process:
 
-1. Navigate to the required repository on GitHub (in this case the P-L-Services repository)
+1. Open GitHub (https://github.com) and log in (completing username/password as required)
 
-2. Click on the Settings option (far most right option) and scroll down to the GitHub Pages section (approximately 2/3 down the settings page)
+2. Navigate to the required repository on GitHub (in this case the andrewboyd79/CraftGinsNI repository)
+
+3. Click on the Settings option (far most right option) and scroll down to the GitHub Pages section (approximately 2/3 down the settings page)
 
 3. Select the source/branch to be published (in this case the master branch)
 
 4. Click Save
 
 5. When successful a banner indicates that the site has been published and details the address (in this case https://andrewboyd79.github.io/CraftGinsNI/)
+
+
+It may be necessary to clone the repository from GitHub to your local computer.  Cloning the repository makes a copy of all the of repository data and takes it from GitHub to your local machine.  The following steps, detailed below, should be taken to clone a repository:
+
+1. Navigate to the main page of the repository (in this case https://github.com/andrewboyd79/CraftGinsNI)
+
+2. Select the green button labelled Code
+
+3. To clone the repo using HTTPS select the "HTTPS" option; to clone using an SSH key select the second opttion "SSH"; to clone using GitHub CLI select the third "GitHub CLI" option. Use the clipboard icon to copy the relevant information.
+
+4. Open Git Bash and change the working directory to the location where you wish the cloned repo to be stored.
+
+5. Use the git clone command and paste in the information copied in step 3 and Press Enter to create a local clone
+
+6. If you wish to clone the repo to GitHub Desktop repeat steps 1 & 2 and from there select the "Open with GitHub Desktop" option
+
+7. Follow the on screen prompts from within GitHub Desktop (this option required GitHub Desktop to be installed to be successful!)
 
 Support information, for this process, can be found on the [GitHub Pages section](https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site) of the GitHub Docs 
 
@@ -260,19 +277,34 @@ Support information, for this process, can be found on the [GitHub Pages section
 ## Images
 The following images have been used for this project:
 
-- TO BE COMPLETED
+- [Hero image](https://pixabay.com/photos/avenue-trees-the-dark-hedges-3464777/) - Image by DarkmoonArt_de from Pixabay
+- [Review Section Image](https://unsplash.com/photos/CTB2vC1PlTM) - Photo by K. Mitch Hodge on Unsplash
+- [Categories image](https://unsplash.com/photos/M_v-Ckr7YE4) - Photo by J. Hendrickson Hodge on Unsplash
+- [Places to go Hero image](https://unsplash.com/photos/3M0bvgkBWv0) - Photo by Peter Mitchell on Unsplash
+- [Copeland Gin image](https://cdn.shopify.com/s/files/1/2525/1426/products/f92d02c443c5743263f03eba4ea27deb24f8cc1e.jpg?v=1587836725) - Image from vineyardbelfast.co.uk
+- [Jawbox gin image](https://d3hjf51r9j54j7.cloudfront.net/wp-content/uploads/sites/7/2018/01/Jawbox-Gin.jpg) - Image from packagingnews.co.uk
+- [Boatyard Gin image](https://www.ilovegin.com/wp-content/uploads/2019/03/Boatyard-gin-beach-1024x682.jpeg) - Image from ilovegin.com
+- [Symphonia Gin image](https://mickeykellysbar.com/wp-content/uploads/2020/06/Symphonia-Gin.jpg) - Image from mickeykellysbar.com
+- [Echlinville Gin image](https://www.coqtailmilano.com/wp-content/uploads/2020/06/Echlinville-Distillery-gin-irlandesi-Coqtail-Milano-683x1024.jpg) - Image from coqtailmilano.com
+- [Belfast 1912 Gin image](https://www.saverglass.com/sites/default/files/csv_realisations/img/Belfast_1912_Gin.jpg) - Image from saverglass.com
+- [Shortcross Gin image](https://cdn.notonthehighstreet.com/fs/c1/9a/e970-8303-4a08-8b0b-9546a5d7c954/original_shortcross-gin-rademon-estate-distillery.jpg) - Image from notonthehighstreet
+- [Galgorm Bar image](http://www.businesseye.co.uk/app/uploads/2018/06/Galgorm%E2%80%99s-resident-Gin-Connoisseur-Marcus-Carty-in-the-Gin-Library-with-Galgorms-very-own-bottle-of-Watenshi-one-of-the-worlds-most-expensive-and-exclusive-gins.-1.jpg) - Image from Businesseye.co.uk
+- [Crown Bar image](https://visit-belfast.s3.eu-west-1.amazonaws.com/JDJ5JDEwJEJiLzZDT0tCVlMyQy5uZEQzQ3BjeU9iQUlZMjNtQTN4anpkSVZ3UHFRL0hjYWhMSHhwRlJh_1920x1080.jpg?1521201302) - Image from Visit Belfast
+- [Harbour Bar image](https://visitportrush.co.uk/wp-content/uploads/2019/07/35788_The-Harbour-Bar-compressor.jpg) - Image from visitportrush.co.uk
+- [Bennigans Bar image](https://www.facebook.com/bennigansbar/photos/3178184812258227) - Image from Facebook.com
 
-- [Gallery image](https://pixabay.com/photos/test-tube-lab-medical-research-214244/) - Photo by PublicDomainPictures from Pixabay 
 
 ## Content
 - Canva.com was used to create the logo.png image
-- Snapseed was used to modify the hero image
+- Windows Photo Editor was used to modify/crop the images
 
 ## Code
-- TO BE COMPLETED
+- Google Maps code taken from https://stackoverflow.com/questions/15531390/adding-array-of-markers-in-google-map and amended for purpose.  Further information was taken from the Google Maps JavaScript API documentation and amended (https://developers.google.com/maps/documentation/javascript/overview)
+- Additional information was taken from JavaScript & JQuery interactive front-end web development book by Jon Duckett
+- 
 
 ## Acknowledgements
 - Thanks to my mentor (Aaron Sinnott) for his guidance and help during this project
 - Thanks to the Code Instutute Slack community who helped with various articles, suggestions and problem solves
-- Code Instutute tutor support for their help resolving minor issue with 
+
 
