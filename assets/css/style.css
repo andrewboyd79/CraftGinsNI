@@ -116,7 +116,7 @@ a:hover {
 
 #herotext {
   top: 30%;
-  left: 20%;
+  left: 10%;
   position: absolute;
 }
 
@@ -125,7 +125,7 @@ a:hover {
   color: #FFFFFF;
   font-family: 'brandon-grotesque', sans-serif;
   font-weight: 800;
-  font-size: 48px;
+  font-size: 40px;
   line-height: 1;
   margin-bottom: 20px;
   text-align: right;
@@ -136,7 +136,7 @@ a:hover {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   line-height: 1.2;
-  font-size: 28px;
+  font-size: 22px;
   text-align: right;
 }
 
