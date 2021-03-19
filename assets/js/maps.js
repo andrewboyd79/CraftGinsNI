@@ -13,16 +13,19 @@ function initMap (locations) { //data will not be populated until dropdown is se
    let marker, i;
 
    //iterates through the locations variable to create markers and position them on the map
-  for (let location of locations){  
+  for (let location of Object.values(locations)){ 
+     let latitude = location.lat;
+     let longtitude = location.lng;
+     let title = location.title;
       marker = new google.maps.Marker({ 
          //position: new google.maps.LatLng(locations[i][1],locations[i][2]),
-         position: new google.maps.LatLng(location.lat,location.lng),
+         position: new google.maps.LatLng(latitude,longtitude),
          map: map 
    });
    
    google.maps.event.addListener(marker, 'click', (function(marker, i) {
          return function() {
-            infowindow.setContent(location.title);
+            infowindow.setContent(title);
             infowindow.open(map, marker);
          };
    })
